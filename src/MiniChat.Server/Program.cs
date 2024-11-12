@@ -1,2 +1,20 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
+
+namespace MiniComm.Server
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Title = "MiniChat服务终端";
+            
+            while (true)
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.Write("Server>");
+                Console.ResetColor();
+                Console.ReadLine();
+            }
+        }
+    }
+}

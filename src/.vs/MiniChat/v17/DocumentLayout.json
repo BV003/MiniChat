@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\yuanke\\Desktop\\MiniChat\\src\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|c:\\users\\yuanke\\desktop\\minichat\\src\\minichat.client\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|solutionrelative:minichat.client\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|c:\\users\\yuanke\\desktop\\minichat\\src\\minichat.client\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|solutionrelative:minichat.client\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BB08F2FF-CE03-462A-8B16-4C016AA14771}|MiniChat.Server\\MiniChat.Server.csproj|c:\\users\\yuanke\\desktop\\minichat\\src\\minichat.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB08F2FF-CE03-462A-8B16-4C016AA14771}|MiniChat.Server\\MiniChat.Server.csproj|solutionrelative:minichat.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{950CFEF5-E2C3-48A5-8C44-43473FB2CEDC}|MiniChat.Common\\MiniChat.Common.csproj|c:\\users\\yuanke\\desktop\\minichat\\src\\minichat.common\\exception\\serializationexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{950CFEF5-E2C3-48A5-8C44-43473FB2CEDC}|MiniChat.Common\\MiniChat.Common.csproj|solutionrelative:minichat.common\\exception\\serializationexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{088B9372-5E13-4EEF-A57B-A37315730808}|MiniChat.Transmitting\\MiniChat.Transmitting.csproj|c:\\users\\yuanke\\desktop\\minichat\\src\\minichat.transmitting\\entity\\datatype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{088B9372-5E13-4EEF-A57B-A37315730808}|MiniChat.Transmitting\\MiniChat.Transmitting.csproj|solutionrelative:minichat.transmitting\\entity\\datatype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{088B9372-5E13-4EEF-A57B-A37315730808}|MiniChat.Transmitting\\MiniChat.Transmitting.csproj|c:\\users\\yuanke\\desktop\\minichat\\src\\minichat.transmitting\\entity\\requestresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{088B9372-5E13-4EEF-A57B-A37315730808}|MiniChat.Transmitting\\MiniChat.Transmitting.csproj|solutionrelative:minichat.transmitting\\entity\\requestresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{088B9372-5E13-4EEF-A57B-A37315730808}|MiniChat.Transmitting\\MiniChat.Transmitting.csproj|c:\\users\\yuanke\\desktop\\minichat\\src\\minichat.transmitting\\entity\\transmit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{088B9372-5E13-4EEF-A57B-A37315730808}|MiniChat.Transmitting\\MiniChat.Transmitting.csproj|solutionrelative:minichat.transmitting\\entity\\transmit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{088B9372-5E13-4EEF-A57B-A37315730808}|MiniChat.Transmitting\\MiniChat.Transmitting.csproj|c:\\users\\yuanke\\desktop\\minichat\\src\\minichat.transmitting\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{088B9372-5E13-4EEF-A57B-A37315730808}|MiniChat.Transmitting\\MiniChat.Transmitting.csproj|solutionrelative:minichat.transmitting\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{088B9372-5E13-4EEF-A57B-A37315730808}|MiniChat.Transmitting\\MiniChat.Transmitting.csproj|c:\\users\\yuanke\\desktop\\minichat\\src\\minichat.transmitting\\server\\bytesconvert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{088B9372-5E13-4EEF-A57B-A37315730808}|MiniChat.Transmitting\\MiniChat.Transmitting.csproj|solutionrelative:minichat.transmitting\\server\\bytesconvert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,38 +47,93 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\yuanke\\Desktop\\MiniChat\\src\\MiniChat.Client\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "MiniChat.Client\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\yuanke\\Desktop\\MiniChat\\src\\MiniChat.Client\\MainWindow.xaml",
-              "RelativeToolTip": "MiniChat.Client\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-12T07:39:08.332Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\yuanke\\Desktop\\MiniChat\\src\\MiniChat.Client\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "MiniChat.Client\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\yuanke\\Desktop\\MiniChat\\src\\MiniChat.Client\\MainWindow.xaml.cs",
-              "RelativeToolTip": "MiniChat.Client\\MainWindow.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T07:39:08.174Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\yuanke\\Desktop\\MiniChat\\src\\MiniChat.Server\\Program.cs",
               "RelativeDocumentMoniker": "MiniChat.Server\\Program.cs",
               "ToolTip": "C:\\Users\\yuanke\\Desktop\\MiniChat\\src\\MiniChat.Server\\Program.cs",
               "RelativeToolTip": "MiniChat.Server\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T07:38:39.275Z"
+              "WhenOpened": "2024-11-12T08:12:20.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SerializationException.cs",
+              "DocumentMoniker": "C:\\Users\\yuanke\\Desktop\\MiniChat\\src\\MiniChat.Common\\Exception\\SerializationException.cs",
+              "RelativeDocumentMoniker": "MiniChat.Common\\Exception\\SerializationException.cs",
+              "ToolTip": "C:\\Users\\yuanke\\Desktop\\MiniChat\\src\\MiniChat.Common\\Exception\\SerializationException.cs",
+              "RelativeToolTip": "MiniChat.Common\\Exception\\SerializationException.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T08:04:13.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\yuanke\\Desktop\\MiniChat\\src\\MiniChat.Transmitting\\Entity\\User.cs",
+              "RelativeDocumentMoniker": "MiniChat.Transmitting\\Entity\\User.cs",
+              "ToolTip": "C:\\Users\\yuanke\\Desktop\\MiniChat\\src\\MiniChat.Transmitting\\Entity\\User.cs",
+              "RelativeToolTip": "MiniChat.Transmitting\\Entity\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T07:58:26.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Transmit.cs",
+              "DocumentMoniker": "C:\\Users\\yuanke\\Desktop\\MiniChat\\src\\MiniChat.Transmitting\\Entity\\Transmit.cs",
+              "RelativeDocumentMoniker": "MiniChat.Transmitting\\Entity\\Transmit.cs",
+              "ToolTip": "C:\\Users\\yuanke\\Desktop\\MiniChat\\src\\MiniChat.Transmitting\\Entity\\Transmit.cs",
+              "RelativeToolTip": "MiniChat.Transmitting\\Entity\\Transmit.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T07:58:23.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RequestResult.cs",
+              "DocumentMoniker": "C:\\Users\\yuanke\\Desktop\\MiniChat\\src\\MiniChat.Transmitting\\Entity\\RequestResult.cs",
+              "RelativeDocumentMoniker": "MiniChat.Transmitting\\Entity\\RequestResult.cs",
+              "ToolTip": "C:\\Users\\yuanke\\Desktop\\MiniChat\\src\\MiniChat.Transmitting\\Entity\\RequestResult.cs",
+              "RelativeToolTip": "MiniChat.Transmitting\\Entity\\RequestResult.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T07:58:20.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DataType.cs",
+              "DocumentMoniker": "C:\\Users\\yuanke\\Desktop\\MiniChat\\src\\MiniChat.Transmitting\\Entity\\DataType.cs",
+              "RelativeDocumentMoniker": "MiniChat.Transmitting\\Entity\\DataType.cs",
+              "ToolTip": "C:\\Users\\yuanke\\Desktop\\MiniChat\\src\\MiniChat.Transmitting\\Entity\\DataType.cs",
+              "RelativeToolTip": "MiniChat.Transmitting\\Entity\\DataType.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T07:58:18.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BytesConvert.cs",
+              "DocumentMoniker": "C:\\Users\\yuanke\\Desktop\\MiniChat\\src\\MiniChat.Transmitting\\Server\\BytesConvert.cs",
+              "RelativeDocumentMoniker": "MiniChat.Transmitting\\Server\\BytesConvert.cs",
+              "ToolTip": "C:\\Users\\yuanke\\Desktop\\MiniChat\\src\\MiniChat.Transmitting\\Server\\BytesConvert.cs",
+              "RelativeToolTip": "MiniChat.Transmitting\\Server\\BytesConvert.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T07:57:38.347Z",
+              "EditorCaption": ""
             }
           ]
         }

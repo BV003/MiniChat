@@ -1,0 +1,15 @@
+C:\Users\yuanke\Desktop\MiniChat\src\MiniChat.Server\bin\Debug\net8.0\MiniChat.Server.exe
+C:\Users\yuanke\Desktop\MiniChat\src\MiniChat.Server\bin\Debug\net8.0\MiniChat.Server.deps.json
+C:\Users\yuanke\Desktop\MiniChat\src\MiniChat.Server\bin\Debug\net8.0\MiniChat.Server.runtimeconfig.json
+C:\Users\yuanke\Desktop\MiniChat\src\MiniChat.Server\bin\Debug\net8.0\MiniChat.Server.dll
+C:\Users\yuanke\Desktop\MiniChat\src\MiniChat.Server\bin\Debug\net8.0\MiniChat.Server.pdb
+C:\Users\yuanke\Desktop\MiniChat\src\MiniChat.Server\obj\Debug\net8.0\MiniChat.Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yuanke\Desktop\MiniChat\src\MiniChat.Server\obj\Debug\net8.0\MiniChat.Server.AssemblyInfoInputs.cache
+C:\Users\yuanke\Desktop\MiniChat\src\MiniChat.Server\obj\Debug\net8.0\MiniChat.Server.AssemblyInfo.cs
+C:\Users\yuanke\Desktop\MiniChat\src\MiniChat.Server\obj\Debug\net8.0\MiniChat.Server.csproj.CoreCompileInputs.cache
+C:\Users\yuanke\Desktop\MiniChat\src\MiniChat.Server\obj\Debug\net8.0\MiniChat.Server.sourcelink.json
+C:\Users\yuanke\Desktop\MiniChat\src\MiniChat.Server\obj\Debug\net8.0\MiniChat.Server.dll
+C:\Users\yuanke\Desktop\MiniChat\src\MiniChat.Server\obj\Debug\net8.0\refint\MiniChat.Server.dll
+C:\Users\yuanke\Desktop\MiniChat\src\MiniChat.Server\obj\Debug\net8.0\MiniChat.Server.pdb
+C:\Users\yuanke\Desktop\MiniChat\src\MiniChat.Server\obj\Debug\net8.0\MiniChat.Server.genruntimeconfig.cache
+C:\Users\yuanke\Desktop\MiniChat\src\MiniChat.Server\obj\Debug\net8.0\ref\MiniChat.Server.dll
