@@ -1,0 +1,11 @@
+C:\Users\lwq_0\Desktop\little-telegram\MiniComm.Client\MiniChat\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\lwq_0\Desktop\little-telegram\MiniComm.Client\MiniChat\obj\Debug\net8.0-windows\Views\EditInfo.g.cs
+C:\Users\lwq_0\Desktop\little-telegram\MiniComm.Client\MiniChat\obj\Debug\net8.0-windows\Views\Home.g.cs
+C:\Users\lwq_0\Desktop\little-telegram\MiniComm.Client\MiniChat\obj\Debug\net8.0-windows\Views\Login.g.cs
+C:\Users\lwq_0\Desktop\little-telegram\MiniComm.Client\MiniChat\obj\Debug\net8.0-windows\Views\SeekFriend.g.cs
+C:\Users\lwq_0\Desktop\little-telegram\MiniComm.Client\MiniChat\obj\Debug\net8.0-windows\Views\Signup.g.cs
+C:\Users\lwq_0\Desktop\little-telegram\MiniComm.Client\MiniChat\obj\Debug\net8.0-windows\Views\UserInfo.g.cs
+C:\Users\lwq_0\Desktop\little-telegram\MiniComm.Client\MiniChat\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\lwq_0\Desktop\little-telegram\MiniComm.Client\MiniChat\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\lwq_0\Desktop\little-telegram\MiniComm.Client\MiniChat\obj\Debug\net8.0-windows\MiniChat_MarkupCompile.cache
+C:\Users\lwq_0\Desktop\little-telegram\MiniComm.Client\MiniChat\obj\Debug\net8.0-windows\MiniChat_MarkupCompile.lref
