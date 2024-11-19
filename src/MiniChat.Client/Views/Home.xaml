@@ -4,8 +4,46 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MiniComm.Client.Views"
+        xmlns:mini="clr-namespace:MiniComm.Client"
+        xmlns:sys="clr-namespace:System;assembly=System.Runtime"
         mc:Ignorable="d"
-        Title="Home" Height="450" Width="800">
+        Title="{x:Static mini:Config.Name}" Height="620" Width="980"
+        WindowStartupLocation="CenterScreen" Style="{StaticResource WindowStyle}"
+        MouseDown="Window_MouseDown" Loaded="Window_Loaded" Closing="Window_Closing">
+    <Window.Resources>
+        <Style x:Key="HeadIconButtonStyle" TargetType="{x:Type Button}">
+            <Setter Property="Cursor" Value="Hand" />
+            <Setter Property="BorderBrush" Value="Transparent" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}" >
+                        <Border Width="60" Height="60" CornerRadius="100" BorderThickness="1" BorderBrush="{TemplateBinding BorderBrush}">
+                            <Border.Background>
+                                <ImageBrush>
+                                    <ImageBrush.ImageSource>
+                                        <DrawingImage>
+                                            <DrawingImage.Drawing>
+                                                <ImageDrawing ImageSource="{Binding UserModel.HeadIcon}" Rect="0,0,60,60" />
+                                            </DrawingImage.Drawing>
+                                        </DrawingImage>
+                                    </ImageBrush.ImageSource>
+                                </ImageBrush>
+                            </Border.Background>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="BorderBrush" Value="{DynamicResource MainColor}" />
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="BorderBrush" Value="Transparent" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -13,15 +51,19 @@
         </Grid.RowDefinitions>
 
         <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="5"
-                    VerticalAlignment="Top" HorizontalAlignment="Right">
-            <Button Style="{StaticResource TitleButtonStyle}" Content="-" />
-            <Button Style="{StaticResource TitleButtonStyle}" Content="□" />
-            <Button Style="{StaticResource TitleButtonStyle}" Content="×" />
+                    VerticalAlignment="Top" HorizontalAlignment="Right" >
+            <Button Style="{StaticResource TitleButtonStyle}" Content="-" Click="WindowMinimized" />
+            <Button Style="{StaticResource TitleButtonStyle}" Content="□" Click="WindowMaximized" />
+            <Button Style="{StaticResource TitleButtonStyle}" Content="×" Click="WindowClose" />
         </StackPanel>
 
         <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="10"
                     VerticalAlignment="Top" HorizontalAlignment="Left">
-            <Button />
+            <Button Style="{StaticResource HeadIconButtonStyle}" Command="{Binding ShowUserInfoCommand}">
+                <Button.CommandParameter>
+                    <sys:Boolean>True</sys:Boolean>
+                </Button.CommandParameter>
+            </Button>
         </StackPanel>
 
         <Grid Grid.Row="1">
@@ -34,17 +76,29 @@
                 <RowDefinition Height="2.5*" />
             </Grid.RowDefinitions>
 
-            <ListBox Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" Background="LightGray" BorderBrush="LightGray"
-                     ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+            <ListBox Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" Background="Transparent" BorderBrush="Transparent"
+                     ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                     SelectedItem="{Binding SelectedFriend}" ItemsSource="{Binding FriendList}">
                 <ListBox.ItemTemplate>
                     <DataTemplate DataType="{x:Type ListBox}">
-                        <TextBlock Foreground="Black" Text="示例昵称" VerticalAlignment="Center" />
+                        <TextBlock Foreground="{DynamicResource MainColor}" Text="{Binding NickName}" VerticalAlignment="Center" />
                     </DataTemplate>
                 </ListBox.ItemTemplate>
+                <ListBox.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="查看资料" Command="{Binding ShowUserInfoCommand}">
+                            <MenuItem.CommandParameter>
+                                <sys:Boolean>False</sys:Boolean>
+                            </MenuItem.CommandParameter>
+                        </MenuItem>
+                        <MenuItem Header="移除好友" Command="{Binding RemoveFriendCommand}" />
+                    </ContextMenu>
+                </ListBox.ContextMenu>
             </ListBox>
 
-            <ListBox x:Name="messageListBox" Grid.Column="1" Grid.Row="0" Background="LightGray"
-                     BorderBrush="LightGray" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+            <ListBox x:Name="messageListBox" Grid.Column="1" Grid.Row="0" Background="Transparent"
+                     BorderBrush="Transparent" ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                     ItemsSource="{Binding MessageList}">
                 <ListBox.ItemTemplate>
                     <DataTemplate DataType="{x:Type ListBox}">
                         <Grid>
@@ -53,9 +107,9 @@
                                 <RowDefinition Height="Auto" />
                                 <RowDefinition Height="Auto" />
                             </Grid.RowDefinitions>
-                            <TextBlock Grid.Row="0" Text="示例来源昵称" />
-                            <TextBlock Grid.Row="1" Text="示例消息内容" TextWrapping="Wrap" />
-                            <Image Grid.Row="2" Stretch="None" Source="这里假设一个默认图片路径，比如 /Resources/Images/default_image.png" />
+                            <TextBlock Grid.Row="0" Style="{StaticResource TextBlockStyle}" Text="{Binding Source.NickName}" />
+                            <TextBlock Grid.Row="1" Text="{Binding Text}" TextWrapping="Wrap" />
+                            <Image Grid.Row="2" Stretch="None" Source="{Binding Image}" />
                         </Grid>
                     </DataTemplate>
                 </ListBox.ItemTemplate>
@@ -69,21 +123,30 @@
                 </Grid.RowDefinitions>
 
                 <StackPanel Grid.Row="0" Orientation="Horizontal">
-                    <Button Style="{StaticResource BorderButtonStyle}" >
+                    <Button Style="{StaticResource BorderButtonStyle}" Command="{Binding SendImageCommand}">
                         <Image Source="/Resources/Images/picture.png" Width="25" Height="25" />
                     </Button>
-                    <Button Style="{StaticResource BorderButtonStyle}" Margin="5 0 5 0">
+                    <Button Style="{StaticResource BorderButtonStyle}" Margin="5 0 5 0" Command="{Binding SendFileCommand}">
                         <Image Source="/Resources/Images/folder.png" Width="25" Height="25" />
                     </Button>
-                    <Button Style="{StaticResource BorderButtonStyle}" >
+                    <Button Style="{StaticResource BorderButtonStyle}" Command="{Binding RefreshCommand}">
                         <Image Source="/Resources/Images/refresh.png" Width="25" Height="25" />
                     </Button>
                 </StackPanel>
 
-                <TextBox Grid.Row="1" Margin="5" TextWrapping="Wrap" />
+                <TextBox Grid.Row="1" Margin="5" TextWrapping="Wrap" Text="{Binding Message}">
+                    <TextBox.Template>
+                        <ControlTemplate>
+                            <Border>
+                                <ScrollViewer x:Name="PART_ContentHost" />
+                            </Border>
+                        </ControlTemplate>
+                    </TextBox.Template>
+                </TextBox>
 
                 <Button Style="{StaticResource ButtonStyle}" Grid.Row="2" Margin="0 0 10 10"
-                        Width="70" Height="25" Content="发送" HorizontalAlignment="Right" />
+                        Width="70" Height="25" Content="发送" HorizontalAlignment="Right"
+                        Command="{Binding SendTextCommand}" />
             </Grid>
         </Grid>
     </Grid>

@@ -1,16 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
+﻿using System.Windows;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+using System.ComponentModel;
+using MiniComm.Client.Services;
+using MiniComm.Client.ViewModels;
 
 namespace MiniComm.Client.Views
 {
@@ -19,9 +11,54 @@ namespace MiniComm.Client.Views
     /// </summary>
     public partial class Home : Window
     {
-        public Home()
+        public static Home HomeWindow;
+
+        public Home(IDataService dataService)
         {
             InitializeComponent();
+            this.DataContext = new HomeViewModel(dataService);
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            HomeWindow = this;
+        }
+
+        private void Window_Closing(object sender, CancelEventArgs e)
+        {
+            HomeWindow = null;
+            ((HomeViewModel)this.DataContext).CloseCommand.Execute(null);
+            UserInfo.UserInfoWindow?.Close();
+            SeekFriend.SeekFriendWindow?.Close();
+            EditInfo.EditInfoWindow?.Close();
+        }
+
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton == MouseButton.Left)
+            {
+                this.DragMove();
+            }
+        }
+
+        private void WindowMinimized(object sender, RoutedEventArgs e)
+        {
+            this.WindowState = WindowState.Minimized;
+        }
+
+        private void WindowMaximized(object sender, RoutedEventArgs e)
+        {
+            if (this.WindowState == WindowState.Maximized)
+            {
+                this.WindowState = WindowState.Normal;
+                return;
+            }
+            this.WindowState = WindowState.Maximized;
+        }
+
+        private void WindowClose(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

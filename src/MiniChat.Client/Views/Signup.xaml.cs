@@ -1,16 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
+﻿using System.Windows;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+using System.Windows.Controls;
+using System.ComponentModel;
+using MiniComm.Client.ViewModels;
 
 namespace MiniComm.Client.Views
 {
@@ -19,9 +11,49 @@ namespace MiniComm.Client.Views
     /// </summary>
     public partial class Signup : Window
     {
+        public static Signup SignupWindow;
+
         public Signup()
         {
             InitializeComponent();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            SignupWindow = this;
+            this.DataContext = new SignupViewModel();
+        }
+
+        private void Window_Closing(object sender, CancelEventArgs e)
+        {
+            SignupWindow = null;
+        }
+
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton == MouseButton.Left)
+            {
+                this.DragMove();
+            }
+        }
+
+        private void WindowMinimized(object sender, RoutedEventArgs e)
+        {
+            this.WindowState = WindowState.Minimized;
+        }
+
+        private void WindowClose(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void PasswordBox_PasswordChanged(object sender, RoutedEventArgs e)
+        {
+            PasswordBox passwordBox = sender as PasswordBox;
+            if (passwordBox != null)
+            {
+                PasswordBoxBindingHelper.SetPassword(passwordBox, passwordBox.Password);
+            }
         }
     }
 }

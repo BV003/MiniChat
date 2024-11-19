@@ -1,16 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
+﻿using System.Windows;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+using System.ComponentModel;
+using MiniComm.Client.ViewModels;
 
 namespace MiniComm.Client.Views
 {
@@ -19,9 +10,41 @@ namespace MiniComm.Client.Views
     /// </summary>
     public partial class Login : Window
     {
+        public static Login LoginWindow;
+
         public Login()
         {
             InitializeComponent();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            LoginWindow = this;
+            this.DataContext = new LoginViewModel();
+        }
+
+        private void Window_Closing(object sender, CancelEventArgs e)
+        {
+            LoginWindow = null;
+            Signup.SignupWindow?.Close();
+        }
+
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton == MouseButton.Left)
+            {
+                this.DragMove();
+            }
+        }
+
+        private void WindowMinimized(object sender, RoutedEventArgs e)
+        {
+            this.WindowState = WindowState.Minimized;
+        }
+
+        private void WindowClose(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

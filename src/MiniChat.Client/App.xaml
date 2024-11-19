@@ -1,11 +1,11 @@
-﻿<Application x:Class="MiniChat.App"
+﻿<Application x:Class="MiniComm.Client.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:MiniChat"
-             StartupUri="MainWindow.xaml">
+             xmlns:local="clr-namespace:MiniComm.Client"
+             StartupUri="Views/Login.xaml">
     <Application.Resources>
         <!--主题颜色-->
-        <SolidColorBrush x:Key="MainColor" Color="#FF2056F0" />
+        <SolidColorBrush x:Key="MainColor" Color="#A020F0" />
         <SolidColorBrush x:Key="BackgroundColor" Color="#FFFAF0" />
 
         <!--按钮颜色-->
@@ -14,7 +14,7 @@
         <SolidColorBrush x:Key="ButtonMouseOver2" Color="#AB82FF" />
         <!--按下-->
         <SolidColorBrush x:Key="ButtonPressed1" Color="#FFE4E1" />
-        <SolidColorBrush x:Key="ButtonPressed2" Color="#FF2056F0" />
+        <SolidColorBrush x:Key="ButtonPressed2" Color="#A020F0" />
         <!--禁用-->
         <SolidColorBrush x:Key="ButtonIsEnabled" Color="#D3D3D3" />
 
@@ -33,7 +33,7 @@
                 </Setter.Value>
             </Setter>
         </Style>
-
+        
         <!--标题按钮样式-->
         <Style x:Key="TitleButtonStyle" TargetType="{x:Type Button}">
             <Setter Property="Width" Value="25" />
@@ -44,7 +44,7 @@
                     <ControlTemplate TargetType="{x:Type Button}">
                         <Border CornerRadius="100" Background="{TemplateBinding Background}">
                             <TextBlock Text="{TemplateBinding Content}" Foreground="{DynamicResource MainColor}" FontSize="20"
-                                   VerticalAlignment="Center" HorizontalAlignment="Center" />
+                                       VerticalAlignment="Center" HorizontalAlignment="Center" />
                         </Border>
                         <ControlTemplate.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
@@ -58,7 +58,7 @@
                 </Setter.Value>
             </Setter>
         </Style>
-
+        
         <!--普通按钮样式-->
         <Style x:Key="ButtonStyle" TargetType="{x:Type Button}">
             <Setter Property="Background" Value="{DynamicResource MainColor}" />
@@ -142,7 +142,7 @@
                 <Setter.Value>
                     <ControlTemplate>
                         <Border CornerRadius="5" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}"
-                            VerticalAlignment="Center">
+                                VerticalAlignment="Center">
                             <ScrollViewer x:Name="PART_ContentHost" />
                         </Border>
                         <ControlTemplate.Triggers>
@@ -154,7 +154,7 @@
                 </Setter.Value>
             </Setter>
         </Style>
-
+        
         <!--文字块样式-->
         <Style x:Key="TextBlockStyle" TargetType="{x:Type TextBlock}">
             <Setter Property="Foreground" Value="{DynamicResource MainColor}" />

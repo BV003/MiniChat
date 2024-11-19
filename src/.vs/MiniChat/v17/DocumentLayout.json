@@ -1,18 +1,94 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\yuanke\\Desktop\\MiniChat\\src\\",
+  "WorkspaceRootPath": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|c:\\users\\yuanke\\desktop\\minichat\\src\\minichat.client\\views\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|c:\\users\\lwq_0\\desktop\\minichat\\src\\minichat.client\\commands\\delegatecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|solutionrelative:minichat.client\\commands\\delegatecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|c:\\users\\lwq_0\\desktop\\minichat\\src\\minichat.client\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|solutionrelative:minichat.client\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|c:\\users\\lwq_0\\desktop\\minichat\\src\\minichat.client\\converter\\inversebooleanconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|solutionrelative:minichat.client\\converter\\inversebooleanconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|c:\\users\\lwq_0\\desktop\\minichat\\src\\minichat.client\\converter\\numbertostateconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|solutionrelative:minichat.client\\converter\\numbertostateconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|c:\\users\\lwq_0\\desktop\\minichat\\src\\minichat.client\\helper\\clienthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|solutionrelative:minichat.client\\helper\\clienthelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|c:\\users\\lwq_0\\desktop\\minichat\\src\\minichat.client\\models\\messagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|solutionrelative:minichat.client\\models\\messagemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|c:\\users\\lwq_0\\desktop\\minichat\\src\\minichat.client\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|solutionrelative:minichat.client\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|c:\\users\\lwq_0\\desktop\\minichat\\src\\minichat.client\\services\\idataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|solutionrelative:minichat.client\\services\\idataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|c:\\users\\lwq_0\\desktop\\minichat\\src\\minichat.client\\services\\dataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|solutionrelative:minichat.client\\services\\dataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{088B9372-5E13-4EEF-A57B-A37315730808}|MiniChat.Transmitting\\MiniChat.Transmitting.csproj|c:\\users\\lwq_0\\desktop\\minichat\\src\\minichat.transmitting\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{088B9372-5E13-4EEF-A57B-A37315730808}|MiniChat.Transmitting\\MiniChat.Transmitting.csproj|solutionrelative:minichat.transmitting\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|c:\\users\\lwq_0\\desktop\\minichat\\src\\minichat.client\\helper\\progress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|solutionrelative:minichat.client\\helper\\progress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|c:\\users\\lwq_0\\desktop\\minichat\\src\\minichat.client\\helper\\downloadfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|solutionrelative:minichat.client\\helper\\downloadfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|c:\\users\\lwq_0\\desktop\\minichat\\src\\minichat.client\\views\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|solutionrelative:minichat.client\\views\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|c:\\users\\yuanke\\desktop\\minichat\\src\\minichat.client\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|c:\\users\\lwq_0\\desktop\\minichat\\src\\minichat.client\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|solutionrelative:minichat.client\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|c:\\users\\lwq_0\\desktop\\minichat\\src\\minichat.client\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|solutionrelative:minichat.client\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|c:\\users\\lwq_0\\desktop\\minichat\\src\\minichat.client\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|solutionrelative:minichat.client\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|c:\\users\\yuanke\\desktop\\minichat\\src\\minichat.client\\minichat.client.csproj||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|solutionrelative:minichat.client\\minichat.client.csproj||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|c:\\users\\lwq_0\\desktop\\minichat\\src\\minichat.client\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|solutionrelative:minichat.client\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|c:\\users\\lwq_0\\desktop\\minichat\\src\\minichat.client\\views\\editinfo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|solutionrelative:minichat.client\\views\\editinfo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|c:\\users\\lwq_0\\desktop\\minichat\\src\\minichat.client\\views\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|solutionrelative:minichat.client\\views\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|c:\\users\\lwq_0\\desktop\\minichat\\src\\minichat.client\\views\\seekfriend.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|solutionrelative:minichat.client\\views\\seekfriend.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|c:\\users\\lwq_0\\desktop\\minichat\\src\\minichat.client\\views\\signup.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|solutionrelative:minichat.client\\views\\signup.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|c:\\users\\lwq_0\\desktop\\minichat\\src\\minichat.client\\views\\userinfo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0B178AD1-9811-440B-A3D1-35533C48947E}|MiniChat.Client\\MiniChat.Client.csproj|solutionrelative:minichat.client\\views\\userinfo.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,19 +98,179 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InverseBooleanConverter.cs",
+              "DocumentMoniker": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\Converter\\InverseBooleanConverter.cs",
+              "RelativeDocumentMoniker": "MiniChat.Client\\Converter\\InverseBooleanConverter.cs",
+              "ToolTip": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\Converter\\InverseBooleanConverter.cs",
+              "RelativeToolTip": "MiniChat.Client\\Converter\\InverseBooleanConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T08:24:25.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NumberToStateConverter.cs",
+              "DocumentMoniker": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\Converter\\NumberToStateConverter.cs",
+              "RelativeDocumentMoniker": "MiniChat.Client\\Converter\\NumberToStateConverter.cs",
+              "ToolTip": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\Converter\\NumberToStateConverter.cs",
+              "RelativeToolTip": "MiniChat.Client\\Converter\\NumberToStateConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T08:24:30.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Config.cs",
+              "DocumentMoniker": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\Config.cs",
+              "RelativeDocumentMoniker": "MiniChat.Client\\Config.cs",
+              "ToolTip": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\Config.cs",
+              "RelativeToolTip": "MiniChat.Client\\Config.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAAwDYAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T07:22:44.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DelegateCommand.cs",
+              "DocumentMoniker": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\Commands\\DelegateCommand.cs",
+              "RelativeDocumentMoniker": "MiniChat.Client\\Commands\\DelegateCommand.cs",
+              "ToolTip": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\Commands\\DelegateCommand.cs",
+              "RelativeToolTip": "MiniChat.Client\\Commands\\DelegateCommand.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAowEIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T08:24:33.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ClientHelper.cs",
+              "DocumentMoniker": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\Helper\\ClientHelper.cs",
+              "RelativeDocumentMoniker": "MiniChat.Client\\Helper\\ClientHelper.cs",
+              "ToolTip": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\Helper\\ClientHelper.cs",
+              "RelativeToolTip": "MiniChat.Client\\Helper\\ClientHelper.cs",
+              "ViewState": "AgIAAMYAAAAAAAAAAAAIwNAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T08:23:57.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MessageModel.cs",
+              "DocumentMoniker": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\Models\\MessageModel.cs",
+              "RelativeDocumentMoniker": "MiniChat.Client\\Models\\MessageModel.cs",
+              "ToolTip": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\Models\\MessageModel.cs",
+              "RelativeToolTip": "MiniChat.Client\\Models\\MessageModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T07:26:15.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserModel.cs",
+              "DocumentMoniker": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\Models\\UserModel.cs",
+              "RelativeDocumentMoniker": "MiniChat.Client\\Models\\UserModel.cs",
+              "ToolTip": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\Models\\UserModel.cs",
+              "RelativeToolTip": "MiniChat.Client\\Models\\UserModel.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAUAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T07:26:16.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IDataService.cs",
+              "DocumentMoniker": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\Services\\IDataService.cs",
+              "RelativeDocumentMoniker": "MiniChat.Client\\Services\\IDataService.cs",
+              "ToolTip": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\Services\\IDataService.cs",
+              "RelativeToolTip": "MiniChat.Client\\Services\\IDataService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T07:26:10.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DataService.cs",
+              "DocumentMoniker": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\Services\\DataService.cs",
+              "RelativeDocumentMoniker": "MiniChat.Client\\Services\\DataService.cs",
+              "ToolTip": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\Services\\DataService.cs",
+              "RelativeToolTip": "MiniChat.Client\\Services\\DataService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T07:25:02.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Transmitting\\Entity\\User.cs",
+              "RelativeDocumentMoniker": "MiniChat.Transmitting\\Entity\\User.cs",
+              "ToolTip": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Transmitting\\Entity\\User.cs",
+              "RelativeToolTip": "MiniChat.Transmitting\\Entity\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T08:35:07.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Progress.cs",
+              "DocumentMoniker": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\Helper\\Progress.cs",
+              "RelativeDocumentMoniker": "MiniChat.Client\\Helper\\Progress.cs",
+              "ToolTip": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\Helper\\Progress.cs",
+              "RelativeToolTip": "MiniChat.Client\\Helper\\Progress.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T08:24:01.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DownloadFile.cs",
+              "DocumentMoniker": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\Helper\\DownloadFile.cs",
+              "RelativeDocumentMoniker": "MiniChat.Client\\Helper\\DownloadFile.cs",
+              "ToolTip": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\Helper\\DownloadFile.cs",
+              "RelativeToolTip": "MiniChat.Client\\Helper\\DownloadFile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T08:23:59.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 12,
               "Title": "Login.xaml",
-              "DocumentMoniker": "C:\\Users\\yuanke\\Desktop\\MiniChat\\src\\MiniChat.Client\\Views\\Login.xaml",
+              "DocumentMoniker": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\Views\\Login.xaml",
               "RelativeDocumentMoniker": "MiniChat.Client\\Views\\Login.xaml",
-              "ToolTip": "C:\\Users\\yuanke\\Desktop\\MiniChat\\src\\MiniChat.Client\\Views\\Login.xaml",
+              "ToolTip": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\Views\\Login.xaml",
               "RelativeToolTip": "MiniChat.Client\\Views\\Login.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-11-19T06:46:28.778Z",
@@ -42,26 +278,117 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\yuanke\\Desktop\\MiniChat\\src\\MiniChat.Client\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "MiniChat.Client\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\yuanke\\Desktop\\MiniChat\\src\\MiniChat.Client\\MainWindow.xaml",
-              "RelativeToolTip": "MiniChat.Client\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-19T06:46:18.097Z"
+              "DocumentIndex": 13,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\App.xaml.cs",
+              "RelativeDocumentMoniker": "MiniChat.Client\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\App.xaml.cs",
+              "RelativeToolTip": "MiniChat.Client\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T07:11:41.116Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MiniChat.Client.csproj",
-              "DocumentMoniker": "C:\\Users\\yuanke\\Desktop\\MiniChat\\src\\MiniChat.Client\\MiniChat.Client.csproj",
-              "RelativeDocumentMoniker": "MiniChat.Client\\MiniChat.Client.csproj",
-              "ToolTip": "C:\\Users\\yuanke\\Desktop\\MiniChat\\src\\MiniChat.Client\\MiniChat.Client.csproj",
-              "RelativeToolTip": "MiniChat.Client\\MiniChat.Client.csproj",
+              "DocumentIndex": 14,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\App.xaml",
+              "RelativeDocumentMoniker": "MiniChat.Client\\App.xaml",
+              "ToolTip": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\App.xaml",
+              "RelativeToolTip": "MiniChat.Client\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-19T08:13:11.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MiniChat.Client\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\MainWindow.xaml",
+              "RelativeToolTip": "MiniChat.Client\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-19T06:46:18.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "MiniChat.Client\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\AssemblyInfo.cs",
+              "RelativeToolTip": "MiniChat.Client\\AssemblyInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-19T06:44:34.253Z"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T08:11:08.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Home.xaml",
+              "DocumentMoniker": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\Views\\Home.xaml",
+              "RelativeDocumentMoniker": "MiniChat.Client\\Views\\Home.xaml",
+              "ToolTip": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\Views\\Home.xaml",
+              "RelativeToolTip": "MiniChat.Client\\Views\\Home.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-19T07:07:48.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "SeekFriend.xaml",
+              "DocumentMoniker": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\Views\\SeekFriend.xaml",
+              "RelativeDocumentMoniker": "MiniChat.Client\\Views\\SeekFriend.xaml",
+              "ToolTip": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\Views\\SeekFriend.xaml",
+              "RelativeToolTip": "MiniChat.Client\\Views\\SeekFriend.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-19T07:07:54.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Signup.xaml",
+              "DocumentMoniker": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\Views\\Signup.xaml",
+              "RelativeDocumentMoniker": "MiniChat.Client\\Views\\Signup.xaml",
+              "ToolTip": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\Views\\Signup.xaml",
+              "RelativeToolTip": "MiniChat.Client\\Views\\Signup.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-19T07:07:55.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UserInfo.xaml",
+              "DocumentMoniker": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\Views\\UserInfo.xaml",
+              "RelativeDocumentMoniker": "MiniChat.Client\\Views\\UserInfo.xaml",
+              "ToolTip": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\Views\\UserInfo.xaml",
+              "RelativeToolTip": "MiniChat.Client\\Views\\UserInfo.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-19T07:07:56.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "EditInfo.xaml",
+              "DocumentMoniker": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\Views\\EditInfo.xaml",
+              "RelativeDocumentMoniker": "MiniChat.Client\\Views\\EditInfo.xaml",
+              "ToolTip": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\Views\\EditInfo.xaml",
+              "RelativeToolTip": "MiniChat.Client\\Views\\EditInfo.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-19T07:07:43.092Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1a46fd64-28d5-434c-8eb3-17a02d419b53}"
             }
           ]
         }

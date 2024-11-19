@@ -4,8 +4,15 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MiniComm.Client.Views"
+        xmlns:converter="clr-namespace:MiniComm.Client.Converter"
         mc:Ignorable="d"
-        Title="UserInfo" Height="450" Width="800">
+        Title="{Binding UserModel.NickName, StringFormat=\{0\}的资料卡}" Height="285" Width="400"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Style="{StaticResource WindowStyle}"
+        MouseDown="Window_MouseDown" Loaded="Window_Loaded" Closing="Window_Closing">
+    <Window.Resources>
+        <converter:NumberToStateConverter x:Key="NumberToStateConverter" />
+    </Window.Resources>
+    
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -13,9 +20,9 @@
         </Grid.RowDefinitions>
 
         <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="5"
-                    VerticalAlignment="Top" HorizontalAlignment="Right">
-            <Button Style="{StaticResource TitleButtonStyle}" Content="-" />
-            <Button Style="{StaticResource TitleButtonStyle}" Content="×" />
+                    VerticalAlignment="Top" HorizontalAlignment="Right" >
+            <Button Style="{StaticResource TitleButtonStyle}" Content="-" Click="WindowMinimized" />
+            <Button Style="{StaticResource TitleButtonStyle}" Content="×" Click="WindowClose" />
         </StackPanel>
 
         <Grid Grid.Row="1">
@@ -28,24 +35,27 @@
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
 
-            <Button Grid.Column="0" Grid.Row="0" Style="{StaticResource BorderButtonStyle}" Margin="10">
-                <Image Stretch="Fill"/>
+            <Button Grid.Column="0" Grid.Row="0" Style="{StaticResource BorderButtonStyle}" Margin="10"
+                    Command="{Binding UpdateHeadIconCommand}">
+                <Image Stretch="Fill" Source="{Binding UserModel.HeadIcon}" />
             </Button>
 
             <StackPanel Grid.Column="1" Grid.Row="0" Margin="10">
-                <TextBlock Style="{StaticResource TextBlockStyle}" Text="UID：示例用户ID" />
-                <TextBlock Style="{StaticResource TextBlockStyle}" Text="账户：示例账户名"
+                <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding UserModel.UserID, StringFormat=UID：\{0\}}" />
+                <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding UserModel.UserName, StringFormat=账户：\{0\}}"
                            Margin="0 15 0 15" />
-                <TextBlock Style="{StaticResource TextBlockStyle}" Text="昵称：示例昵称" />
-                <TextBlock Style="{StaticResource TextBlockStyle}" Text="性别：示例性别"
+                <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding UserModel.NickName, StringFormat=昵称：\{0\}}" />
+                <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding UserModel.Gender, StringFormat=性别：\{0\}}"
                            Margin="0 15 0 15" />
-                <TextBlock Style="{StaticResource TextBlockStyle}" Text="年龄：示例年龄" />
-                <TextBlock Style="{StaticResource TextBlockStyle}" Text="状态：示例状态"
+                <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding UserModel.Age, StringFormat=年龄：\{0\}}" />
+                <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding UserModel.State, Converter={StaticResource NumberToStateConverter}, StringFormat=状态：\{0\}}"
                            Margin="0 15 0 0" />
             </StackPanel>
 
-            <Button Grid.Column="0" Grid.Row="1" Style="{StaticResource ButtonStyle}" Content="添加好友" Width="150" Height="25" />
-            <Button Grid.Column="1" Grid.Row="1" Style="{StaticResource ButtonStyle}" Content="修改资料" Width="150" Height="25" />
+            <Button Grid.Column="0" Grid.Row="1" Style="{StaticResource ButtonStyle}" Content="添加好友" Width="150" Height="25"
+                    Visibility="{Binding Visibility}" Command="{Binding AddFriendCommand}" />
+            <Button Grid.Column="1" Grid.Row="1" Style="{StaticResource ButtonStyle}" Content="修改资料" Width="150" Height="25"
+                    Visibility="{Binding Visibility}" Command="{Binding UpdateInfoCommand}" />
         </Grid>
     </Grid>
 </Window>

@@ -196,19 +196,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\yuanke\\.nuget\\packages\\": {}
+    "C:\\Users\\lwq_0\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\yuanke\\Desktop\\MiniChat\\src\\MiniChat.Transmitting\\MiniChat.Transmitting.csproj",
+      "projectUniqueName": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Transmitting\\MiniChat.Transmitting.csproj",
       "projectName": "MiniChat.Transmitting",
-      "projectPath": "C:\\Users\\yuanke\\Desktop\\MiniChat\\src\\MiniChat.Transmitting\\MiniChat.Transmitting.csproj",
-      "packagesPath": "C:\\Users\\yuanke\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\yuanke\\Desktop\\MiniChat\\src\\MiniChat.Transmitting\\obj\\",
+      "projectPath": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Transmitting\\MiniChat.Transmitting.csproj",
+      "packagesPath": "C:\\Users\\lwq_0\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Transmitting\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\yuanke\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lwq_0\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -223,8 +223,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\yuanke\\Desktop\\MiniChat\\src\\MiniChat.Common\\MiniChat.Common.csproj": {
-              "projectPath": "C:\\Users\\yuanke\\Desktop\\MiniChat\\src\\MiniChat.Common\\MiniChat.Common.csproj"
+            "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Common\\MiniChat.Common.csproj": {
+              "projectPath": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Common\\MiniChat.Common.csproj"
             }
           }
         }
@@ -265,7 +265,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

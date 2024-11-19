@@ -4,8 +4,11 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MiniComm.Client.Views"
+        xmlns:mini="clr-namespace:MiniComm.Client"
         mc:Ignorable="d"
-        Title="Login" Height="450" Width="800">
+        Title="{Binding Source={x:Static mini:Config.Name}, StringFormat=\{0\} - 登录}" Height="300" Width="450"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Style="{StaticResource WindowStyle}"
+        MouseDown="Window_MouseDown" Loaded="Window_Loaded" Closing="Window_Closing">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -15,11 +18,11 @@
             <ColumnDefinition Width="3*" />
             <ColumnDefinition Width="7*" />
         </Grid.ColumnDefinitions>
-
-        <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal"
+        
+        <StackPanel Grid.Row="0" Grid.Column="1"  Orientation="Horizontal"
                     VerticalAlignment="Top" HorizontalAlignment="Right" Margin="5">
-            <Button Style="{StaticResource TitleButtonStyle}" Content="-" />
-            <Button Style="{StaticResource TitleButtonStyle}" Content="×" />
+            <Button Style="{StaticResource TitleButtonStyle}" Content="-" Click="WindowMinimized" />
+            <Button Style="{StaticResource TitleButtonStyle}" Content="×" Click="WindowClose" />
         </StackPanel>
 
         <Border Grid.Column="0" Grid.RowSpan="2" CornerRadius="10 0 0 10"
@@ -27,7 +30,7 @@
             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
                 <TextBlock Text="Mini" FontSize="50" FontWeight="Bold" Foreground="#FFFAFA"
                            FontFamily="Times New Roman" TextAlignment="Center" />
-                <TextBlock Text="  Chat" FontSize="30" FontWeight="Bold" Foreground="#FFFAFA" />
+                <TextBlock Text="Communication" FontSize="15" FontWeight="Bold" Foreground="#FFFAFA" />
             </StackPanel>
         </Border>
 
@@ -46,14 +49,14 @@
                 <RowDefinition Height="*" />
                 <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
-
+            
             <StackPanel Grid.Column="1" Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
-                <TextBlock Text="账户" VerticalAlignment="Center" Margin="0 0 5 0" />
-                <TextBox Style="{StaticResource InputBoxStyle}" Width="160" />
+                <TextBlock Style="{StaticResource TextBlockStyle}" Text="账户" VerticalAlignment="Center" Margin="0 0 5 0" />
+                <TextBox Style="{StaticResource InputBoxStyle}" Width="160" Text="{Binding UserName}" />
             </StackPanel>
 
             <StackPanel Grid.Column="1" Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center">
-                <TextBlock Text="密码" VerticalAlignment="Center" Margin="0 0 5 0" />
+                <TextBlock Style="{StaticResource TextBlockStyle}" Text="密码" VerticalAlignment="Center" Margin="0 0 5 0" />
                 <PasswordBox x:Name="UserPasswordBox" Style="{StaticResource InputBoxStyle}" Width="160" />
             </StackPanel>
 
@@ -63,13 +66,13 @@
                     <ColumnDefinition Width="8.3*" />
                     <ColumnDefinition Width="0.2*" />
                 </Grid.ColumnDefinitions>
-
-                <Button Grid.Column="1" Content="登   录" Style="{StaticResource ButtonStyle}" Height="30" />
-
+                
+                <Button Grid.Column="1" Content="登   录" Style="{StaticResource ButtonStyle}" Height="30"
+                        VerticalAlignment="Top" Command="{Binding LoginCommand}" CommandParameter="{Binding ElementName=UserPasswordBox}" />
             </Grid>
 
             <Button Grid.Column="2" Grid.Row="6" Content="注册" Style="{StaticResource TransparentButtonStyle}"
-                    HorizontalAlignment="Right" Margin="10" />
+                    HorizontalAlignment="Right" Margin="10" Command="{Binding SignupCommand}" />
         </Grid>
     </Grid>
 </Window>
