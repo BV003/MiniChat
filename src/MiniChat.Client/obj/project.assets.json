@@ -180,19 +180,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lwq_0\\.nuget\\packages\\": {}
+    "C:\\Users\\yuanke\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\MiniChat.Client.csproj",
+      "projectUniqueName": "C:\\Users\\yuanke\\Desktop\\MiniChat\\src\\MiniChat.Client\\MiniChat.Client.csproj",
       "projectName": "MiniChat.Client",
-      "projectPath": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\MiniChat.Client.csproj",
-      "packagesPath": "C:\\Users\\lwq_0\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\obj\\",
+      "projectPath": "C:\\Users\\yuanke\\Desktop\\MiniChat\\src\\MiniChat.Client\\MiniChat.Client.csproj",
+      "packagesPath": "C:\\Users\\yuanke\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\yuanke\\Desktop\\MiniChat\\src\\MiniChat.Client\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\lwq_0\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\yuanke\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -248,7 +248,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

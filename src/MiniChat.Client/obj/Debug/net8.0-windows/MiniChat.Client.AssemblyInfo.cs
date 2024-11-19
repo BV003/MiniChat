@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MiniChat.Client")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+047529c79ae2ca1a8f4b7ea9757766c697c3695c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7d9269a6b88ed4f66cab703d56ed896cfac0a2e4")]
 [assembly: System.Reflection.AssemblyProductAttribute("MiniChat.Client")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MiniChat.Client")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
