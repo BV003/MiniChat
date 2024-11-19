@@ -67,8 +67,7 @@
               "RelativeToolTip": "MiniChat.Common\\Exception\\SerializationException.cs",
               "ViewState": "AQIAABAAAAAAAAAAAAAgwAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T08:04:13.795Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T08:04:13.795Z"
             },
             {
               "$type": "Document",
@@ -80,8 +79,7 @@
               "RelativeToolTip": "MiniChat.Transmitting\\Entity\\User.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T07:58:26.72Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T07:58:26.72Z"
             },
             {
               "$type": "Document",
@@ -93,8 +91,7 @@
               "RelativeToolTip": "MiniChat.Transmitting\\Entity\\Transmit.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T07:58:23.525Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T07:58:23.525Z"
             },
             {
               "$type": "Document",
@@ -106,8 +103,7 @@
               "RelativeToolTip": "MiniChat.Transmitting\\Entity\\RequestResult.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T07:58:20.876Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T07:58:20.876Z"
             },
             {
               "$type": "Document",
@@ -119,8 +115,7 @@
               "RelativeToolTip": "MiniChat.Transmitting\\Entity\\DataType.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T07:58:18.362Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T07:58:18.362Z"
             },
             {
               "$type": "Document",
@@ -132,8 +127,7 @@
               "RelativeToolTip": "MiniChat.Transmitting\\Server\\BytesConvert.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T07:57:38.347Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-12T07:57:38.347Z"
             }
           ]
         }
