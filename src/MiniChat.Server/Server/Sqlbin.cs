@@ -2,9 +2,9 @@
 using System.Data;
 using MiniChat.Transmitting;
 
-namespace MiniChat.Server.Server
+namespace MiniChat.Server
 {
-    public static class Sqlbin
+    public static class Sqlbin//数据库相关的trycatch写在这里
     {
         /// <summary>
         /// SQL Server数据库连接字符串
@@ -40,7 +40,7 @@ namespace MiniChat.Server.Server
         /// </summary>
         /// <param name="cmdText">T-SQL命令</param>
         /// <param name="parameters">T-SQL命令参数</param>
-        public static async Task<int> ExecuteNonQueryAsync(string cmdText, SqlParameter[] parameters = null)
+        public static async Task<int> returnAffectedRowsAsync(string cmdText, SqlParameter[] parameters = null)
         {
             SqlConnection sqlConnection = null;
             SqlCommand sqlCommand = null;
@@ -74,7 +74,7 @@ namespace MiniChat.Server.Server
         /// </summary>
         /// <param name="cmdText">T-SQL命令</param>
         /// <param name="parameters">T-SQL命令参数</param>
-        public static async Task<object> ExecuteScalarAsync(string cmdText, SqlParameter[] parameters = null)
+        public static async Task<object> getFirstDataAsync(string cmdText, SqlParameter[] parameters = null)
         {
             SqlConnection sqlConnection = null;
             SqlCommand sqlCommand = null;
@@ -109,7 +109,7 @@ namespace MiniChat.Server.Server
         /// <param name="cmdText">T-SQL命令</param>
         /// <param name="tableName">数据表名称</param>
         /// <param name="parameters">T-SQL命令参数</param>
-        public static async Task<DataTable> GetDataTableAsync(string cmdText, string tableName, SqlParameter[] parameters = null)
+        public static async Task<DataTable> getTableAsync(string cmdText, string tableName, SqlParameter[] parameters = null)
         {
             return await Task.Run<DataTable>(() =>
             {

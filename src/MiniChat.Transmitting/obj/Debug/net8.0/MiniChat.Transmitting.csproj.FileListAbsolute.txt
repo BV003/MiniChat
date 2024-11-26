@@ -1,0 +1,16 @@
+C:\Users\123\Documents\GitHub\MiniChat\src\MiniChat.Transmitting\bin\Debug\net8.0\MiniChat.Transmitting.deps.json
+C:\Users\123\Documents\GitHub\MiniChat\src\MiniChat.Transmitting\bin\Debug\net8.0\MiniChat.Transmitting.dll
+C:\Users\123\Documents\GitHub\MiniChat\src\MiniChat.Transmitting\bin\Debug\net8.0\MiniChat.Transmitting.pdb
+C:\Users\123\Documents\GitHub\MiniChat\src\MiniChat.Transmitting\bin\Debug\net8.0\MiniChat.Common.dll
+C:\Users\123\Documents\GitHub\MiniChat\src\MiniChat.Transmitting\bin\Debug\net8.0\MiniChat.Common.pdb
+C:\Users\123\Documents\GitHub\MiniChat\src\MiniChat.Transmitting\obj\Debug\net8.0\MiniChat.Transmitting.csproj.AssemblyReference.cache
+C:\Users\123\Documents\GitHub\MiniChat\src\MiniChat.Transmitting\obj\Debug\net8.0\MiniChat.Transmitting.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\123\Documents\GitHub\MiniChat\src\MiniChat.Transmitting\obj\Debug\net8.0\MiniChat.Transmitting.AssemblyInfoInputs.cache
+C:\Users\123\Documents\GitHub\MiniChat\src\MiniChat.Transmitting\obj\Debug\net8.0\MiniChat.Transmitting.AssemblyInfo.cs
+C:\Users\123\Documents\GitHub\MiniChat\src\MiniChat.Transmitting\obj\Debug\net8.0\MiniChat.Transmitting.csproj.CoreCompileInputs.cache
+C:\Users\123\Documents\GitHub\MiniChat\src\MiniChat.Transmitting\obj\Debug\net8.0\MiniChat.Transmitting.sourcelink.json
+C:\Users\123\Documents\GitHub\MiniChat\src\MiniChat.Transmitting\obj\Debug\net8.0\MiniChat.781E3CCD.Up2Date
+C:\Users\123\Documents\GitHub\MiniChat\src\MiniChat.Transmitting\obj\Debug\net8.0\MiniChat.Transmitting.dll
+C:\Users\123\Documents\GitHub\MiniChat\src\MiniChat.Transmitting\obj\Debug\net8.0\refint\MiniChat.Transmitting.dll
+C:\Users\123\Documents\GitHub\MiniChat\src\MiniChat.Transmitting\obj\Debug\net8.0\MiniChat.Transmitting.pdb
+C:\Users\123\Documents\GitHub\MiniChat\src\MiniChat.Transmitting\obj\Debug\net8.0\ref\MiniChat.Transmitting.dll

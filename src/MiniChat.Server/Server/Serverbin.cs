@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace MiniChat.Server.Server
+namespace MiniChat.Server
 {
     public static class Serverbin
     {

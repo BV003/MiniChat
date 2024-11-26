@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MiniServer>
+  <Server>
+    <IP>0.0.0.0</IP>
+    <Port>0</Port>
+  </Server>
+  <Database>
+    <ConnectionString></ConnectionString>
+  </Database>
+</MiniServer>

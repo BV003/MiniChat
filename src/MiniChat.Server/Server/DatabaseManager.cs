@@ -5,7 +5,7 @@ using System.Data.SqlClient;
 using System.Text;
 using System.Threading.Tasks;
 using MiniChat.Transmitting;
-namespace MiniChat.Server.Server
+namespace MiniChat.Server
 {
     public static class DatabaseManager
     {
@@ -85,7 +85,7 @@ namespace MiniChat.Server.Server
         {
             string sqlCmd = "SELECT u_name FROM User_Info WHERE u_name=@name";
             SqlParameter nameParameter = new SqlParameter("@name", SqlDbType.NVarChar) { Value = userName };
-            object queryResult = await Sqlbin.ExecuteScalarAsync(sqlCmd, new SqlParameter[] { nameParameter });
+            object queryResult = await Sqlbin.getFirstDataAsync(sqlCmd, new SqlParameter[] { nameParameter });
             if (queryResult == null)
             {
                 return false;
@@ -106,7 +106,7 @@ namespace MiniChat.Server.Server
             string sqlCmd = "SELECT u_name,u_pwd FROM User_Info WHERE u_name=@name AND u_pwd=@pwd";
             SqlParameter nameParameter = new SqlParameter("@name", SqlDbType.NVarChar) { Value = userName };
             SqlParameter passwordParameter = new SqlParameter("@pwd", SqlDbType.NVarChar) { Value = userPassword };
-            object queryResult = await Sqlbin.ExecuteScalarAsync(sqlCmd, new SqlParameter[] { nameParameter, passwordParameter });
+            object queryResult = await Sqlbin.getFirstDataAsync(sqlCmd, new SqlParameter[] { nameParameter, passwordParameter });
             if (queryResult == null)
             {
                 return false;
@@ -136,7 +136,7 @@ namespace MiniChat.Server.Server
                 new SqlParameter ("@age", SqlDbType.Int) { Value = user.Age },
                 new SqlParameter ("@headicon", SqlDbType.NVarChar) { Value = Serverbin.SetUserHeadIcon(user.UserName, user.HeadIcon) }
             };
-            if (await Sqlbin.ExecuteNonQueryAsync(sqlCmd.ToString(), sqlParameters) == -255)
+            if (await Sqlbin.returnAffectedRowsAsync(sqlCmd.ToString(), sqlParameters) == -255)
             {
                 return false;
             }
@@ -151,7 +151,7 @@ namespace MiniChat.Server.Server
         {
             if (user == null) { return false; }
             string sqlCmd = "UPDATE User_Info SET u_nickname=@nickname,u_gender=@gender,u_age=@age,u_head_icon=@headicon WHERE u_name=@name";
-            int result = await Sqlbin.ExecuteNonQueryAsync(sqlCmd, new SqlParameter[]
+            int result = await Sqlbin.returnAffectedRowsAsync(sqlCmd, new SqlParameter[]
             {
                 new SqlParameter ("@nickname", SqlDbType.NVarChar) { Value = user.NickName },
                 new SqlParameter ("@gender", SqlDbType.NVarChar) { Value = user.Gender },
@@ -176,7 +176,7 @@ namespace MiniChat.Server.Server
         {
             string selectSqlCmd = "SELECT u_pwd FROM User_Info WHERE u_name=@name";
             SqlParameter nameParameter = new SqlParameter("@name", SqlDbType.NVarChar) { Value = userName };
-            string password = (await Sqlbin.ExecuteScalarAsync(selectSqlCmd, new SqlParameter[] { nameParameter }))?.ToString();
+            string password = (await Sqlbin.getFirstDataAsync(selectSqlCmd, new SqlParameter[] { nameParameter }))?.ToString();
             if (password == null || (password?.Equals("-255") ?? true))
             {
                 return null;
@@ -189,7 +189,7 @@ namespace MiniChat.Server.Server
                     new SqlParameter("@newPwd", SqlDbType.NVarChar) { Value = newPwd },
                     new SqlParameter("@name", SqlDbType.NVarChar) { Value = userName }
                 };
-                if (await Sqlbin.ExecuteNonQueryAsync(updateSqlCmd, sqlParameters) == -255)
+                if (await Sqlbin.returnAffectedRowsAsync(updateSqlCmd, sqlParameters) == -255)
                 {
                     return null;
                 }
@@ -206,7 +206,7 @@ namespace MiniChat.Server.Server
         {
             string sqlCmd = "SELECT u_state FROM User_Info WHERE u_name=@name";
             SqlParameter nameParameter = new SqlParameter("@name", SqlDbType.NVarChar) { Value = userName };
-            int? result = await Sqlbin.ExecuteScalarAsync(sqlCmd, new SqlParameter[] { nameParameter }) as int?;
+            int? result = await Sqlbin.getFirstDataAsync(sqlCmd, new SqlParameter[] { nameParameter }) as int?;
             if (result == -255)
             {
                 return null;
@@ -222,7 +222,7 @@ namespace MiniChat.Server.Server
         {
             string sqlCmd = "UPDATE User_Info SET u_state=1 WHERE u_name=@name";
             SqlParameter nameParameter = new SqlParameter("@name", SqlDbType.NVarChar) { Value = userName };
-            if (await Sqlbin.ExecuteNonQueryAsync(sqlCmd, new SqlParameter[] { nameParameter }) == -255)
+            if (await Sqlbin.returnAffectedRowsAsync(sqlCmd, new SqlParameter[] { nameParameter }) == -255)
             {
                 return false;
             }
@@ -238,7 +238,7 @@ namespace MiniChat.Server.Server
             string sqlCmd = "UPDATE User_Info SET u_state=0,offline_time=@time WHERE u_name=@name";
             SqlParameter nameParameter = new SqlParameter("@name", SqlDbType.NVarChar) { Value = userName };
             SqlParameter timeParameter = new SqlParameter("@time", SqlDbType.DateTime) { Value = DateTime.Now.ToString() };
-            if (await Sqlbin.ExecuteNonQueryAsync(sqlCmd, new SqlParameter[] { nameParameter, timeParameter }) == -255)
+            if (await Sqlbin.returnAffectedRowsAsync(sqlCmd, new SqlParameter[] { nameParameter, timeParameter }) == -255)
             {
                 return false;
             }
@@ -254,7 +254,7 @@ namespace MiniChat.Server.Server
             User user = null;
             string sqlCmd = "SELECT u_id,u_name,u_pwd,u_nickname,u_gender,u_age,u_head_icon,u_state FROM User_Info WHERE u_name=@name";
             SqlParameter nameParameter = new SqlParameter("@name", SqlDbType.NVarChar) { Value = userName };
-            DataTable userTable = await Sqlbin.GetDataTableAsync(sqlCmd, "User", new SqlParameter[] { nameParameter });
+            DataTable userTable = await Sqlbin.getTableAsync(sqlCmd, "User", new SqlParameter[] { nameParameter });
             if (userTable != null)
             {
                 if (userTable.Rows.Count > 0)
@@ -283,7 +283,7 @@ namespace MiniChat.Server.Server
         {
             string sqlCmd = "SELECT f_name FROM User_Friend_Info WHERE u_name=@name";
             SqlParameter nameParameter = new SqlParameter("@name", SqlDbType.NVarChar) { Value = userName };
-            DataTable friendsTable = await Sqlbin.GetDataTableAsync(sqlCmd, "Friends", new SqlParameter[] { nameParameter });
+            DataTable friendsTable = await Sqlbin.getTableAsync(sqlCmd, "Friends", new SqlParameter[] { nameParameter });
             if (friendsTable != null)
             {
                 User[] users = new User[friendsTable.Rows.Count];
@@ -309,7 +309,7 @@ namespace MiniChat.Server.Server
                 new SqlParameter("@name", SqlDbType.NVarChar) { Value = userName },
                 new SqlParameter("@friendName", SqlDbType.NVarChar) { Value = friendUserName }
             };
-            if (await Sqlbin.ExecuteNonQueryAsync(sqlCmd, sqlParameters) == -255)
+            if (await Sqlbin.returnAffectedRowsAsync(sqlCmd, sqlParameters) == -255)
             {
                 return false;
             }
@@ -322,7 +322,7 @@ namespace MiniChat.Server.Server
                 new SqlParameter("@name", SqlDbType.NVarChar) { Value = friendUserName },
                 new SqlParameter("@friendName", SqlDbType.NVarChar) { Value = userName }
             };
-            if (await Sqlbin.ExecuteNonQueryAsync(sqlCmd, sqlParameters) == -255)
+            if (await Sqlbin.returnAffectedRowsAsync(sqlCmd, sqlParameters) == -255)
             {
                 return false;
             }
@@ -342,7 +342,7 @@ namespace MiniChat.Server.Server
                 new SqlParameter("@name", SqlDbType.NVarChar) { Value = userName },
                 new SqlParameter("@friendName", SqlDbType.NVarChar) { Value = friendUserName }
             };
-            if (await Sqlbin.ExecuteNonQueryAsync(sqlCmd, sqlParameters) == -255)
+            if (await Sqlbin.returnAffectedRowsAsync(sqlCmd, sqlParameters) == -255)
             {
                 return false; ;
             }
@@ -355,7 +355,7 @@ namespace MiniChat.Server.Server
                 new SqlParameter("@name", SqlDbType.NVarChar) { Value = friendUserName },
                 new SqlParameter("@friendName", SqlDbType.NVarChar) { Value = userName }
             };
-            if (await Sqlbin.ExecuteNonQueryAsync(sqlCmd, sqlParameters) == -255)
+            if (await Sqlbin.returnAffectedRowsAsync(sqlCmd, sqlParameters) == -255)
             {
                 return false;
             }

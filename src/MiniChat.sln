@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiniChat.Server", "MiniChat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiniChat.Client", "MiniChat.Client\MiniChat.Client.csproj", "{0B178AD1-9811-440B-A3D1-35533C48947E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniChat.Common", "MiniChat.Common\MiniChat.Common.csproj", "{950CFEF5-E2C3-48A5-8C44-43473FB2CEDC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiniChat.Common", "MiniChat.Common\MiniChat.Common.csproj", "{950CFEF5-E2C3-48A5-8C44-43473FB2CEDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniChat.Socket", "MiniChat.Socket\MiniChat.Socket.csproj", "{42C59D64-D45D-4877-A059-72483244B4B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{950CFEF5-E2C3-48A5-8C44-43473FB2CEDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{950CFEF5-E2C3-48A5-8C44-43473FB2CEDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{950CFEF5-E2C3-48A5-8C44-43473FB2CEDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42C59D64-D45D-4877-A059-72483244B4B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42C59D64-D45D-4877-A059-72483244B4B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42C59D64-D45D-4877-A059-72483244B4B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42C59D64-D45D-4877-A059-72483244B4B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

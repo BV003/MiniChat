@@ -13,11 +13,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\MiniChat.Socket\MiniChat.Socket.csproj" />
     <ProjectReference Include="..\MiniChat.Transmitting\MiniChat.Transmitting.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Socket\EventArgs\" />
     <Folder Include="Socket\SocketManager\" />
     <Folder Include="Socket\SocketServer\" />
   </ItemGroup>

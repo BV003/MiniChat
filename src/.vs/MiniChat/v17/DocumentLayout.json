@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BB08F2FF-CE03-462A-8B16-4C016AA14771}|MiniChat.Server\\MiniChat.Server.csproj|c:\\users\\123\\documents\\github\\minichat\\src\\minichat.server\\server\\databasemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB08F2FF-CE03-462A-8B16-4C016AA14771}|MiniChat.Server\\MiniChat.Server.csproj|solutionrelative:minichat.server\\server\\databasemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BB08F2FF-CE03-462A-8B16-4C016AA14771}|MiniChat.Server\\MiniChat.Server.csproj|c:\\users\\123\\documents\\github\\minichat\\src\\minichat.server\\server\\servershell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB08F2FF-CE03-462A-8B16-4C016AA14771}|MiniChat.Server\\MiniChat.Server.csproj|solutionrelative:minichat.server\\server\\servershell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB08F2FF-CE03-462A-8B16-4C016AA14771}|MiniChat.Server\\MiniChat.Server.csproj|C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\minichat.server\\server\\sqlbin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB08F2FF-CE03-462A-8B16-4C016AA14771}|MiniChat.Server\\MiniChat.Server.csproj|solutionrelative:minichat.server\\server\\sqlbin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB08F2FF-CE03-462A-8B16-4C016AA14771}|MiniChat.Server\\MiniChat.Server.csproj|c:\\users\\123\\documents\\github\\minichat\\src\\minichat.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB08F2FF-CE03-462A-8B16-4C016AA14771}|MiniChat.Server\\MiniChat.Server.csproj|solutionrelative:minichat.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB08F2FF-CE03-462A-8B16-4C016AA14771}|MiniChat.Server\\MiniChat.Server.csproj|c:\\users\\123\\documents\\github\\minichat\\src\\minichat.server\\server\\serverbin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BB08F2FF-CE03-462A-8B16-4C016AA14771}|MiniChat.Server\\MiniChat.Server.csproj|solutionrelative:minichat.server\\server\\serverbin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB08F2FF-CE03-462A-8B16-4C016AA14771}|MiniChat.Server\\MiniChat.Server.csproj|c:\\users\\123\\documents\\github\\minichat\\src\\minichat.server\\server\\sqlbin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB08F2FF-CE03-462A-8B16-4C016AA14771}|MiniChat.Server\\MiniChat.Server.csproj|solutionrelative:minichat.server\\server\\sqlbin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{42C59D64-D45D-4877-A059-72483244B4B4}|MiniChat.Socket\\MiniChat.Socket.csproj|c:\\users\\123\\documents\\github\\minichat\\src\\minichat.socket\\manager\\miniserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42C59D64-D45D-4877-A059-72483244B4B4}|MiniChat.Socket\\MiniChat.Socket.csproj|solutionrelative:minichat.socket\\manager\\miniserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB08F2FF-CE03-462A-8B16-4C016AA14771}|MiniChat.Server\\MiniChat.Server.csproj|c:\\users\\123\\documents\\github\\minichat\\src\\minichat.server\\minichat.server.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{BB08F2FF-CE03-462A-8B16-4C016AA14771}|MiniChat.Server\\MiniChat.Server.csproj|solutionrelative:minichat.server\\minichat.server.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +34,83 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "MiniServer.cs",
+              "DocumentMoniker": "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Socket\\Manager\\MiniServer.cs",
+              "RelativeDocumentMoniker": "MiniChat.Socket\\Manager\\MiniServer.cs",
+              "ToolTip": "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Socket\\Manager\\MiniServer.cs",
+              "RelativeToolTip": "MiniChat.Socket\\Manager\\MiniServer.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAQwBUAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T07:46:52.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ServerShell.cs",
+              "DocumentMoniker": "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Server\\Server\\ServerShell.cs",
+              "RelativeDocumentMoniker": "MiniChat.Server\\Server\\ServerShell.cs",
+              "ToolTip": "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Server\\Server\\ServerShell.cs",
+              "RelativeToolTip": "MiniChat.Server\\Server\\ServerShell.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAQwDkAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T07:05:32.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Server\\Program.cs",
+              "RelativeDocumentMoniker": "MiniChat.Server\\Program.cs",
+              "ToolTip": "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Server\\Program.cs",
+              "RelativeToolTip": "MiniChat.Server\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T06:54:07.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MiniChat.Server",
+              "DocumentMoniker": "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Server\\MiniChat.Server.csproj",
+              "RelativeDocumentMoniker": "MiniChat.Server\\MiniChat.Server.csproj",
+              "ToolTip": "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Server\\MiniChat.Server.csproj",
+              "RelativeToolTip": "MiniChat.Server\\MiniChat.Server.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-25T06:53:48.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Serverbin.cs",
               "DocumentMoniker": "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Server\\Server\\Serverbin.cs",
               "RelativeDocumentMoniker": "MiniChat.Server\\Server\\Serverbin.cs",
               "ToolTip": "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Server\\Server\\Serverbin.cs",
               "RelativeToolTip": "MiniChat.Server\\Server\\Serverbin.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAI0AAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-19T07:36:16.007Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Sqlbin.cs",
               "DocumentMoniker": "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Server\\Server\\Sqlbin.cs",
               "RelativeDocumentMoniker": "MiniChat.Server\\Server\\Sqlbin.cs",
               "ToolTip": "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Server\\Server\\Sqlbin.cs",
               "RelativeToolTip": "MiniChat.Server\\Server\\Sqlbin.cs",
-              "ViewState": "AQIAAFsAAAAAAAAAAAAqwJgAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-19T07:33:32.303Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DatabaseManager.cs",
-              "DocumentMoniker": "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Server\\Server\\DatabaseManager.cs",
-              "RelativeDocumentMoniker": "MiniChat.Server\\Server\\DatabaseManager.cs",
-              "ToolTip": "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Server\\Server\\DatabaseManager.cs",
-              "RelativeToolTip": "MiniChat.Server\\Server\\DatabaseManager.cs",
-              "ViewState": "AQIAAGgAAAAAAAAAAAAgwHcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T07:23:47.729Z",
               "EditorCaption": ""
             }
           ]
