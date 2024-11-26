@@ -1,7 +1,6 @@
-﻿using MiniComm.Client.Models;
-using MiniSocket.Transmitting;
-
-namespace MiniComm.Client.Services
+﻿using MiniChat.Client.Models;
+using MiniChat.Transmitting;
+namespace MiniChat.Client.Services
 {
     public interface IDataService
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Input;
 
-namespace MiniComm.Client.Commands
+namespace MiniChat.Client.Commands
 {
     /// <summary>
     /// 委托命令

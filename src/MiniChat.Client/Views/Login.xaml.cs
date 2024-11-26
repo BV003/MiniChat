@@ -1,9 +1,9 @@
 ﻿using System.Windows;
 using System.Windows.Input;
 using System.ComponentModel;
-using MiniComm.Client.ViewModels;
+using MiniChat.Client.ViewModels;
 
-namespace MiniComm.Client.Views
+namespace MiniChat.Client.Views
 {
     /// <summary>
     /// Login.xaml 的交互逻辑

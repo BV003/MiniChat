@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.IO;
 
-namespace MiniComm.Client.Helper
+namespace MiniChat.Client.Helper
 {
     /// <summary>
     /// 提供将文件保存到本地的功能

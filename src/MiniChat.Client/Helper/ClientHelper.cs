@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Windows;
 using System.Windows.Resources;
 
-namespace MiniComm.Client.Helper
+namespace MiniChat.Client.Helper
 {
     /// <summary>
     /// 客户端帮助类

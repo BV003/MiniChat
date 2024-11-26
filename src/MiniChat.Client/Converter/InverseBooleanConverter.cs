@@ -2,7 +2,7 @@
 using System.Globalization;
 using System.Windows.Data;
 
-namespace MiniComm.Client.Converter
+namespace MiniChat.Client.Converter
 {
     /// <summary>
     /// 布尔值取反转换器

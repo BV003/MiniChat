@@ -2,9 +2,9 @@
 using System.Windows.Input;
 using System.Windows.Controls;
 using System.ComponentModel;
-using MiniComm.Client.ViewModels;
+using MiniChat.Client.ViewModels;
 
-namespace MiniComm.Client.Views
+namespace MiniChat.Client.Views
 {
     /// <summary>
     /// Signup.xaml 的交互逻辑

@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace MiniComm.Client
+namespace MiniChat.Client
 {
     /// <summary>
     /// Interaction logic for App.xaml

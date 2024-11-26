@@ -2,10 +2,10 @@
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.ComponentModel;
-using MiniComm.Client.Models;
-using MiniComm.Client.ViewModels;
+using MiniChat.Client.Models;
+using MiniChat.Client.ViewModels;
 
-namespace MiniComm.Client.Views
+namespace MiniChat.Client.Views
 {
     /// <summary>
     /// UserInfo.xaml 的交互逻辑

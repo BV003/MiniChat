@@ -2,7 +2,7 @@
 using System.Globalization;
 using System.Windows.Data;
 
-namespace MiniComm.Client.Converter
+namespace MiniChat.Client.Converter
 {
     /// <summary>
     /// 状态信息转换器

@@ -1,6 +1,6 @@
 using System;
 
-namespace MiniComm.Client.Helper
+namespace MiniChat.Client.Helper
 {
     /// <summary>
     /// 表示一个进度

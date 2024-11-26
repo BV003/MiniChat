@@ -1,4 +1,4 @@
-﻿namespace MiniComm.Client.Models
+﻿namespace MiniChat.Client.Models
 {
     /// <summary>
     /// 用户消息模型

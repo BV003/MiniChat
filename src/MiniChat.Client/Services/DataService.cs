@@ -1,8 +1,7 @@
 ﻿using MiniChat.Transmitting;
-using MiniComm.Client.Models;
-using MiniSocket.Transmitting;
+using MiniChat.Client.Models;
 
-namespace MiniComm.Client.Services
+namespace MiniChat.Client.Services
 {
     public class DataService : IDataService
     {

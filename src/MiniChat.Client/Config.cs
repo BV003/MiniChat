@@ -3,11 +3,11 @@ using System.Text;
 using System.IO;
 using System.Net;
 using System.Net.Sockets;
-//using MiniSocket.Client;
+using MiniSocket.Client;
 using System.Xml.Linq;
 using System.Linq;
 
-namespace MiniComm.Client
+namespace MiniChat.Client
 {
     /// <summary>
     /// 应用程序配置
@@ -21,7 +21,7 @@ namespace MiniComm.Client
         /// <summary>
         /// 获取或设置客户端对象
         /// </summary>
-        //public static MiniClient MiniClient;
+        public static MiniClient MiniClient;
 
         /// <summary>
         /// 获取日志目录名称

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MiniClient>
+  <Server>
+    <IP>10.128.147.65</IP>
+    <Port>8080</Port>
+  </Server>
+</MiniClient>
