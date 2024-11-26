@@ -4,8 +4,12 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MiniComm.Client.Views"
+        xmlns:mini="clr-namespace:MiniComm.Client"
+        xmlns:vm="clr-namespace:MiniComm.Client.ViewModels"
         mc:Ignorable="d"
-        Title="Signup" Height="450" Width="800">
+        Title="{Binding Source={x:Static mini:Config.Name}, StringFormat=\{0\} - 注册}" Height="380" Width="300"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Style="{StaticResource WindowStyle}"
+        MouseDown="Window_MouseDown" Loaded="Window_Loaded" Closing="Window_Closing">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -33,38 +37,44 @@
 
         <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Orientation="Horizontal"
                     VerticalAlignment="Top" HorizontalAlignment="Right" Margin="5">
-            <Button Style="{StaticResource TitleButtonStyle}" Content="-" />
-            <Button Style="{StaticResource TitleButtonStyle}" Content="×" />
+            <Button Style="{StaticResource TitleButtonStyle}" Content="-" Click="WindowMinimized" />
+            <Button Style="{StaticResource TitleButtonStyle}" Content="×" Click="WindowClose" />
         </StackPanel>
 
         <TextBlock Grid.Row="2" Grid.Column="1" Style="{StaticResource TextBlockStyle}" Text="账户" Margin="0 0 5 0"
                    VerticalAlignment="Center" HorizontalAlignment="Right" />
-        <TextBox Grid.Row="2" Grid.Column="2" Style="{StaticResource InputBoxStyle}" />
+        <TextBox Grid.Row="2" Grid.Column="2" Style="{StaticResource InputBoxStyle}" Text="{Binding UserName}" />
 
         <TextBlock Grid.Row="4" Grid.Column="1" Style="{StaticResource TextBlockStyle}" Text="密码" Margin="0 0 5 0"
                    VerticalAlignment="Center" HorizontalAlignment="Right" />
-        <PasswordBox Grid.Row="4" Grid.Column="2" Style="{StaticResource InputBoxStyle}" />
+        <PasswordBox Grid.Row="4" Grid.Column="2" Style="{StaticResource InputBoxStyle}"
+                     vm:PasswordBoxBindingHelper.Password="{Binding UserPassword, Mode=TwoWay, UpdateSourceTrigger=LostFocus}"
+                     PasswordChanged="PasswordBox_PasswordChanged" />
 
         <TextBlock Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource TextBlockStyle}" Text="确认密码" Margin="0 0 5 0"
                    VerticalAlignment="Center" HorizontalAlignment="Right" />
-        <PasswordBox Grid.Row="6" Grid.Column="2" Style="{StaticResource InputBoxStyle}" />
+        <PasswordBox Grid.Row="6" Grid.Column="2" Style="{StaticResource InputBoxStyle}"
+                     vm:PasswordBoxBindingHelper.Password="{Binding ConfirmPassword, Mode=TwoWay, UpdateSourceTrigger=LostFocus}"
+                     PasswordChanged="PasswordBox_PasswordChanged" />
 
         <TextBlock Grid.Row="8" Grid.Column="1" Style="{StaticResource TextBlockStyle}" Text="昵称" Margin="0 0 5 0"
                    VerticalAlignment="Center" HorizontalAlignment="Right" />
-        <TextBox Grid.Row="8" Grid.Column="2" Style="{StaticResource InputBoxStyle}" />
+        <TextBox Grid.Row="8" Grid.Column="2" Style="{StaticResource InputBoxStyle}" Text="{Binding NickName}" />
 
         <TextBlock Grid.Row="10" Grid.Column="1" Style="{StaticResource TextBlockStyle}" Text="年龄" Margin="0 0 5 0"
                    VerticalAlignment="Center" HorizontalAlignment="Right" />
-        <TextBox Grid.Row="10" Grid.Column="2" Style="{StaticResource InputBoxStyle}" />
+        <TextBox Grid.Row="10" Grid.Column="2" Style="{StaticResource InputBoxStyle}" Text="{Binding Age, UpdateSourceTrigger=PropertyChanged}" />
 
         <GroupBox Grid.Row="12" Grid.Column="1" Grid.ColumnSpan="2" Header="性别" Width="160"
-                  HorizontalAlignment="Center">
+                  HorizontalAlignment="Center" Foreground="{DynamicResource MainColor}">
             <StackPanel Orientation="Horizontal" Margin="5" HorizontalAlignment="Center">
-                <RadioButton Content="男" />
-                <RadioButton Content="女" Margin="20 0 0 0" />
+                <RadioButton Grid.Column="0" Content="男" Foreground="{DynamicResource MainColor}"
+                             IsChecked="{Binding Gender}" />
+                <RadioButton Grid.Column="1" Content="女" Foreground="{DynamicResource MainColor}" Margin="20 0 0 0" />
             </StackPanel>
         </GroupBox>
 
-        <Button Grid.Row="14" Grid.Column="1" Grid.ColumnSpan="2" Content="注   册" Height="25" Style="{StaticResource ButtonStyle}" />
+        <Button Grid.Row="14" Grid.Column="1" Grid.ColumnSpan="2" Content="注   册" Height="25" Style="{StaticResource ButtonStyle}"
+                Command="{Binding SignupCommand}" />
     </Grid>
 </Window>

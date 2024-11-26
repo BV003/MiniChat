@@ -25,6 +25,30 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "MiniChat.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/MiniChat.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MiniChat.Common.dll": {}
+        }
+      },
+      "MiniChat.Transmitting/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "MiniChat.Common": "1.0.0",
+          "NETStandard.Library": "2.0.3"
+        },
+        "compile": {
+          "bin/placeholder/MiniChat.Transmitting.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MiniChat.Transmitting.dll": {}
+        }
       }
     }
   },
@@ -172,38 +196,56 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "MiniChat.Common/1.0.0": {
+      "type": "project",
+      "path": "../MiniChat.Common/MiniChat.Common.csproj",
+      "msbuildProject": "../MiniChat.Common/MiniChat.Common.csproj"
+    },
+    "MiniChat.Transmitting/1.0.0": {
+      "type": "project",
+      "path": "../MiniChat.Transmitting/MiniChat.Transmitting.csproj",
+      "msbuildProject": "../MiniChat.Transmitting/MiniChat.Transmitting.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
+      "MiniChat.Transmitting >= 1.0.0",
       "NETStandard.Library >= 2.0.3"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\123\\.nuget\\packages\\": {}
+    "C:\\Users\\lwq_0\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Client\\MiniChat.Client.csproj",
+      "projectUniqueName": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\MiniChat.Client.csproj",
       "projectName": "MiniChat.Client",
-      "projectPath": "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Client\\MiniChat.Client.csproj",
-      "packagesPath": "C:\\Users\\123\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Client\\obj\\",
+      "projectPath": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\MiniChat.Client.csproj",
+      "packagesPath": "C:\\Users\\lwq_0\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Client\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\123\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\lwq_0\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0-windows"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Transmitting\\MiniChat.Transmitting.csproj": {
+              "projectPath": "C:\\Users\\lwq_0\\Desktop\\MiniChat\\src\\MiniChat.Transmitting\\MiniChat.Transmitting.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -245,7 +287,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
