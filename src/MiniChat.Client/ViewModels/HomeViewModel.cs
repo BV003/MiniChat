@@ -471,7 +471,7 @@ namespace MiniChat.Client.ViewModels
             _downloadFile.Begin(e.FileName, e.FileSize, filePath);
             if (_downloadFile.Go(e.FileName, e.FileData, e.EffectiveBytes))
             {
-
+                MessageBox.Show("对方向你发送了一个文件哦，快去" + filePath + "查看吧。");
             }
         }
 

@@ -5,7 +5,7 @@
              StartupUri="Views/Login.xaml">
     <Application.Resources>
         <!--主题颜色-->
-        <SolidColorBrush x:Key="MainColor" Color="#A020F0" />
+        <SolidColorBrush x:Key="MainColor" Color="#ADD8E6" />
         <SolidColorBrush x:Key="BackgroundColor" Color="#FFFAF0" />
 
         <!--按钮颜色-->

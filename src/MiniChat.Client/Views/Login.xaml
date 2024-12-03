@@ -29,8 +29,8 @@
                 Background="{DynamicResource MainColor}">
             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
                 <TextBlock Text="Mini" FontSize="50" FontWeight="Bold" Foreground="#FFFAFA"
-                           FontFamily="Times New Roman" TextAlignment="Center" />
-                <TextBlock Text="Communication" FontSize="15" FontWeight="Bold" Foreground="#FFFAFA" />
+                            TextAlignment="Center" />
+                <TextBlock Text="Chat" FontSize="36" FontWeight="Bold" Foreground="#FFFAFA" TextAlignment="Center"/>
             </StackPanel>
         </Border>
 

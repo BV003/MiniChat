@@ -1,0 +1,207 @@
+Type D[R][S][T]
+&D[i][j][k] = D+sizeof(Type)*(i*(S*T) + j*T + k)
+rax = 13j
+rsi = 64i
+rdi = 65i
+rdx = 65i + 13j +k
+T = 13
+S = 5
+8 * R * S * T = 3640
+R = 7
+
+rax = 5i
+rax = 40i+bp
+rdx = *(40i+bp+0x8)  =>   sizeof(a_struct)=40
+rcx = bp->first+bp->last
+bp+4+i*sizeof(a_struct)=ap
+*(40i+bp+16+8(*rdx))=rcx
+40i+bp+8 == &a_struct.a[i] =>sizeof(idx)=8     idx = long
+8(*rdx) => sizeof(x[ap->idx])=8  x[ap->idx] = long
+0x120-0x8 = 7*40 = 280 =>CNT = 7
+answer is
+CNT = 7
+a_struct{
+long idx;
+long x[4];
+}
+
+
+r8 = 4n+1
+rax = 3n
+rdi = 3n
+r8 = 32n+8
+rcx = 8j+A
+rax = result (0)
+rdx = i (0)
+
+rax+=*rcx
+i++
+rcx += (32n+8)  =>  32n+8== 8NC(n)
+cmpq %rdi,%rdx   jne .L3  =>3n == NR(n)     
+answer is
+#define NC(n) 4*n+1
+#define NR(n) 3*n
+
+r.q
+r.u[1]
+r.u[0]
+
+
+
+A.
+104  +------------------+
+        |                  |
+        |                  |
+        |                  |
+        |                  |
+        |                  |
+        |                  |
+        |                  |
+        |                  |
+ 64  +------------------+ <-- %rdi
+        |                  |
+        |                  |
+        |                  |
+        |                  |
+        |                  |
+        |                  |
+ 32  +------------------+
+        |         z        |
+ 24  +------------------+
+        |        &z        |
+ 16  +------------------+
+        |         y        |
+  8  +------------------+
+        |         x        |
+  0  +------------------+ <-- %rsp
+B.process传递了%rsp+64
+C.process的代码通过%rsp+偏移量的方式访问参数s的元素
+D.process的代码将%rdi中的值当作结构r的地址，在这个地址上设置结果结构r的字段
+E.
+104  +------------------+
+        |                  |
+        |                  |
+        |                  |
+        |                  |
+        |                  |
+        |                  |
+ 88  +------------------+
+        |        z         |
+ 80  +------------------+
+        |        x         |
+ 72  +------------------+
+        |        y         |
+ 64  +------------------+ <-- %rdi(传入参数)   %rax(process返回参数)
+        |                  | 
+        |                  |  
+        |                  |
+        |                  |
+        |                  |
+        |                  |
+ 32  +------------------+
+        |         z        |
+ 24  +------------------+
+        |        &z        |
+ 16  +------------------+
+        |         y        |
+  8  +------------------+
+        |         x        |
+  0  +------------------+ <-- eval的%rsp
+        |                  |
+ -8  +------------------+ <-- process的%rsp
+F.caller负责给callee准备存储结构的空间并把这个空间的地址用参数传给callee,callee在这个空间存储结构的值
+然后返回这个空间的地址
+
+#include <stdio.h>
+#include <assert.h>
+#define BUFSIZE 12
+void good_echo(void) {
+  char buf[BUFSIZE];
+  while(1) {
+    char* p = fgets(buf, BUF_SIZE, stdin);
+    if (p == NULL) {
+      break;
+    }
+    printf("%s", p);
+  }
+  return;
+}
+int main(int argc, char* argv[]) {
+  good_echo();
+  return 0;
+}
+A.
+e1.p       0
+e1.y       8
+e2.x       0
+e2.next  8
+B.  16字节
+C.
+void proc(union ele *up) {
+  up->e2.x = *( up->e2.next->e1.p ) - up->e2.next->e1.y
+}
+
+You can Russia from land here in Alaska.
+-6360 -6368 -6364 -6360 -6356 -6352 
+0 1 1 2 3 5
+rdi rsi
+if edi == 0 return 0
+if edi == 1 return rsi
+rbx = rdi
+rbp = rsi
+rdi = rdi-1
+r12d = rbp+func4(rdi,rsi)
+rdi = rbx-2
+rsi = rbp
+return func4(rdi,rsi)+r12d
+2 5 12 4 15 7
+beldog
+input numbers are a0-a5
+0x401102 
+rsi->a0   r13->a0   r12d = 0 
+0x401117 rbp=r13
+eax = *r13  eax --     need{eax<=5}   r12d++  
+if r12d != 6 j 0x40113c  if r12d==6 esi = 0 j 0x40117e
+0x40113c
+ebx = r12d 
+0x40113f   rax = ebx eax = a[rax]
+need{eax != *rbp}  ebx++ if ebx<=5 j 0x40113f      need{a[1-5]!=a[0]} {a[2-6]!=a[1]} ...
+r13+=4 (byte) j 0x401117
+0x40115e rdx = *(rdx+8)   eax++  if ecx!=eax j 0x40115e else j 0x401170
+0x40116b edx = 0x6042f0  
+0x401170 *(rsp+rsi*2)=rdx   rsi+=4   if rsi == 0x18 j 0x401193
+0x40117e //step 2  rsi 初值为0     效果-》stack[addr of node[a[0]],addr of node[a[1]],...]
+ecx = a[rsi/4] if ecx<=1 j 0x40116b        0x6042f0 is node1
+eax = 1  edx = 0x6042f0 j 0x40115e
+0x401193//step3   效果：node[a[0]]->node[a[1]]->node[a[2]]...
+rbx = *rsp  (rbx->node[a[0]])
+rax = rsp+8  rsi->a0 rcx = rbx 
+0x4011a4  rdx =*rax  *(rcx+8) = rdx   rax+=8
+if rax == rsi j 0x4011b9 else rcx = rdx j 0x4011a4
+0x4011b9 *(rdx+8)=0  ebp = 5   (rbx->node[a[0]])
+0x4011c6  rax = *(rbx+8)   eax = *rax
+need{*rbx>=eax}   rbx = *(rbx+8)  ebp--   if*rbx !=eax j 0x4011c6 
+6     5     4     3       2     1
+645 793  571 815   953 289
+answer is 2 3 5 6 4 1
+secret phase
+n1 = 36
+
+
+7FFF FFFF E720   7FFF FFFF E724    7FFF FFFF E728  7FFF FFFF E72C
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 c0 17 40 00
+48 83 ec 28 48 c7 c7 77 00 61 55 68  94 18 40 00 c3 00 00 00 00 00 00 00 00 00 00 00 00 00 00 34 64 33 65 33 66 33 38 00 58 00 61 55
+34 64 33 65 33 66 33 38
+401934  pop ->rax
+40192b mov
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 34 19 40 00 00 00 00 00 38 3f 3e 4d 00 00 00 00 2b 19 40 00 00 00 00 00 c0 17 40 00 00 00 00 00  
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 2d 1a 40 00 00 00 00 00 2b 19 40 00 00 00 00 00 34 19 40 00 00 00 00 00 48 00 00 00 00 00 00 00 d0 19 40 00 00 00 00 00 dc 19 40 00 00 00 00 00 bd 19 40 00 00 00 00 00  5e 19 40 00 00 00 00 00 2b 19 40 00 00 00 00 00 94 18 40 00 00 00 00 00 34 64 33 65 33 66 33 38 00
+0x7fff fffb 1348
+0x7fff fffb 1368
+when rsp at my string
+use movq rsp rdi
+4019bd 89 ce 08 d2 c3  ecx->esi
+4019d0 89 c2 84 c0 c3   eax->edx
+4019dc 89 d1 38 c9 c3  edx->ecx
+401a2d 48 89 e0 c3            rsp->rax
+40192b 49 89 c7 c3       rax->rdi

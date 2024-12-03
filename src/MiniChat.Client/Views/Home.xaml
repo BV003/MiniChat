@@ -76,12 +76,13 @@
                 <RowDefinition Height="2.5*" />
             </Grid.RowDefinitions>
 
-            <ListBox Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" Background="Transparent" BorderBrush="Transparent"
+            <ListBox Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" Background="Transparent" BorderBrush="Gray"
+                     BorderThickness="0,1,1,0"
                      ScrollViewer.HorizontalScrollBarVisibility="Disabled"
                      SelectedItem="{Binding SelectedFriend}" ItemsSource="{Binding FriendList}">
                 <ListBox.ItemTemplate>
                     <DataTemplate DataType="{x:Type ListBox}">
-                        <TextBlock Foreground="{DynamicResource MainColor}" Text="{Binding NickName}" VerticalAlignment="Center" />
+                        <TextBlock Foreground="{DynamicResource MainColor}" Text="{Binding NickName}" VerticalAlignment="Center" FontSize="27" />
                     </DataTemplate>
                 </ListBox.ItemTemplate>
                 <ListBox.ContextMenu>
@@ -97,7 +98,8 @@
             </ListBox>
 
             <ListBox x:Name="messageListBox" Grid.Column="1" Grid.Row="0" Background="Transparent"
-                     BorderBrush="Transparent" ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                     BorderBrush="Gray"
+                     BorderThickness="0,1,1,1" ScrollViewer.HorizontalScrollBarVisibility="Disabled"
                      ItemsSource="{Binding MessageList}">
                 <ListBox.ItemTemplate>
                     <DataTemplate DataType="{x:Type ListBox}">
@@ -108,7 +110,7 @@
                                 <RowDefinition Height="Auto" />
                             </Grid.RowDefinitions>
                             <TextBlock Grid.Row="0" Style="{StaticResource TextBlockStyle}" Text="{Binding Source.NickName}" />
-                            <TextBlock Grid.Row="1" Text="{Binding Text}" TextWrapping="Wrap" />
+                            <TextBlock Grid.Row="1" Text="{Binding Text}" TextWrapping="Wrap" FontSize="16" />
                             <Image Grid.Row="2" Stretch="None" Source="{Binding Image}" />
                         </Grid>
                     </DataTemplate>
