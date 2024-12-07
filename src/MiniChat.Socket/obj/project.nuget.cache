@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "hS/jkLF467hYRQX83Xj0LQZCR8iff8KNLoPmq1nBx56MA2NRxtklN3gcVw3jy5XiDVZo6ot+CrfL7qlnQs/uUA==",
+  "dgSpecHash": "/mmkLwGK+yQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Socket\\MiniChat.Socket.csproj",
+  "projectFilePath": "C:\\Users\\lwq_0\\Desktop\\.net工作区\\MiniChat\\src\\MiniChat.Socket\\MiniChat.Socket.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\123\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\123\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\lwq_0\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\lwq_0\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }

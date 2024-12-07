@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MiniChat.Client.Views"
         xmlns:mini="clr-namespace:MiniChat.Client"
-        xmlns:sys="clr-namespace:System;assembly=System.Runtime"
+        xmlns:sys="clr-namespace:System;assembly=System.Runtime" 
         mc:Ignorable="d"
         Title="{x:Static mini:Config.Name}" Height="620" Width="980"
         WindowStartupLocation="CenterScreen" Style="{StaticResource WindowStyle}"
@@ -43,7 +43,7 @@
             </Setter>
         </Style>
     </Window.Resources>
-    
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -52,9 +52,9 @@
 
         <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="5"
                     VerticalAlignment="Top" HorizontalAlignment="Right" >
-            <Button Style="{StaticResource TitleButtonStyle}" Content="-" Click="WindowMinimized" />
-            <Button Style="{StaticResource TitleButtonStyle}" Content="□" Click="WindowMaximized" />
-            <Button Style="{StaticResource TitleButtonStyle}" Content="×" Click="WindowClose" />
+            <Button Style="{StaticResource TitleButtonStyle}" Content="-" Click="WindowMinimized" Height="45" Width="45" />
+            <Button Style="{StaticResource TitleButtonStyle}" Content="□" Click="WindowMaximized" Height="45" Width="45" />
+            <Button Style="{StaticResource TitleButtonStyle}" Content="×" Click="WindowClose" Height="45" Width="45"/>
         </StackPanel>
 
         <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="10"
@@ -64,6 +64,9 @@
                     <sys:Boolean>True</sys:Boolean>
                 </Button.CommandParameter>
             </Button>
+            <TextBlock Style="{StaticResource TextBlockStyle}" Text="{Binding UserModel.UserName}"
+               Margin="15 15 15 0" Width="100" FontSize="25"/>
+
         </StackPanel>
 
         <Grid Grid.Row="1">
@@ -99,18 +102,23 @@
 
             <ListBox x:Name="messageListBox" Grid.Column="1" Grid.Row="0" Background="Transparent"
                      BorderBrush="Gray"
-                     BorderThickness="0,1,1,1" ScrollViewer.HorizontalScrollBarVisibility="Disabled"
-                     ItemsSource="{Binding MessageList}">
-                <ListBox.ItemTemplate>
-                    <DataTemplate DataType="{x:Type ListBox}">
-                        <Grid>
+                     BorderThickness="0,1,0,1" ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                     ItemsSource="{Binding MessageList}" SelectionChanged="messageListBox_SelectionChanged" FontSize="20">
+                <ListBox.ItemContainerStyle>
+                    <Style TargetType="ListBoxItem">
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                    </Style>
+                </ListBox.ItemContainerStyle>
+                <ListBox.ItemTemplate >
+                    <DataTemplate DataType="{x:Type ListBox}" >
+                        <Grid HorizontalAlignment="Stretch">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto" />
                                 <RowDefinition Height="Auto" />
                                 <RowDefinition Height="Auto" />
                             </Grid.RowDefinitions>
-                            <TextBlock Grid.Row="0" Style="{StaticResource TextBlockStyle}" Text="{Binding Source.NickName}" />
-                            <TextBlock Grid.Row="1" Text="{Binding Text}" TextWrapping="Wrap" FontSize="16" />
+                            <TextBlock Grid.Row="0" HorizontalAlignment="{Binding position}" Style="{StaticResource TextBlockStyle}" Text="{Binding Source.NickName}" />
+                            <TextBlock Grid.Row="1" Text="{Binding Text}" HorizontalAlignment="{Binding position}" TextWrapping="Wrap" FontSize="20" />
                             <Image Grid.Row="2" Stretch="None" Source="{Binding Image}" />
                         </Grid>
                     </DataTemplate>
@@ -126,17 +134,17 @@
 
                 <StackPanel Grid.Row="0" Orientation="Horizontal">
                     <Button Style="{StaticResource BorderButtonStyle}" Command="{Binding SendImageCommand}">
-                        <Image Source="/Resources/Images/picture.png" Width="25" Height="25" />
+                        <Image Source="/Resources/Images/picture.png" Width="50" Height="25" />
                     </Button>
                     <Button Style="{StaticResource BorderButtonStyle}" Margin="5 0 5 0" Command="{Binding SendFileCommand}">
-                        <Image Source="/Resources/Images/folder.png" Width="25" Height="25" />
+                        <Image Source="/Resources/Images/folder.png" Width="50" Height="25" />
                     </Button>
                     <Button Style="{StaticResource BorderButtonStyle}" Command="{Binding RefreshCommand}">
-                        <Image Source="/Resources/Images/refresh.png" Width="25" Height="25" />
+                        <Image Source="/Resources/Images/refresh.png" Width="50" Height="25" RenderTransformOrigin="1.426,0.631" />
                     </Button>
                 </StackPanel>
 
-                <TextBox Grid.Row="1" Margin="5" TextWrapping="Wrap" Text="{Binding Message}">
+                <TextBox Grid.Row="1" Margin="5" TextWrapping="Wrap" Text="{Binding Message}" FontSize="20">
                     <TextBox.Template>
                         <ControlTemplate>
                             <Border>
@@ -147,7 +155,7 @@
                 </TextBox>
 
                 <Button Style="{StaticResource ButtonStyle}" Grid.Row="2" Margin="0 0 10 10"
-                        Width="70" Height="25" Content="发送" HorizontalAlignment="Right"
+                        Width="90" Height="30" Content="发送" HorizontalAlignment="Right"
                         Command="{Binding SendTextCommand}" />
             </Grid>
         </Grid>

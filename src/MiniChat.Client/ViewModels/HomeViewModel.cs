@@ -223,6 +223,7 @@ namespace MiniChat.Client.ViewModels
             if (MessageRecord.ContainsKey(userName))
             {
                 MessageRecord[userName].Add(messageModel);
+                
             }
         }
 
@@ -341,7 +342,7 @@ namespace MiniChat.Client.ViewModels
                     string message = Message;
                     if (await Config.MiniClient.SendTextAsync(friend.UserName, message))
                     {
-                        SaveMessageRecord(friend.UserName, new MessageModel() { Source = new UserModel() { UserName = user.UserName, NickName = "Me" }, Text = message });
+                        SaveMessageRecord(friend.UserName, new MessageModel() { Source = new UserModel() { UserName = user.UserName, NickName = "Me" }, Text = message, position = "Right" });
                         UpdateMessageList();
                         Message = string.Empty;
                         return;
@@ -371,7 +372,7 @@ namespace MiniChat.Client.ViewModels
                     {
                         if (await Config.MiniClient.SendImageAsync(friend.UserName, imagePath))
                         {
-                            SaveMessageRecord(friend.UserName, new MessageModel() { Source = new UserModel() { UserName = user.UserName, NickName = "Me" }, Image = imagePath });
+                            SaveMessageRecord(friend.UserName, new MessageModel() { Source = new UserModel() { UserName = user.UserName, NickName = "Me" }, Image = imagePath, position = "Left" });
                             UpdateMessageList();
                             return;
                         }
@@ -446,7 +447,7 @@ namespace MiniChat.Client.ViewModels
         {
             Home.HomeWindow.Dispatcher.Invoke(() =>
             {
-                SaveMessageRecord(e.SourceID, new MessageModel() { Source = new UserModel() { UserName = e.SourceID, NickName = "You" }, Text = e.TextMessage });
+                SaveMessageRecord(e.SourceID, new MessageModel() { Source = new UserModel() { UserName = e.SourceID, NickName = "You" }, Text = e.TextMessage ,position="Left"});
                 UpdateMessageList();
             });
         }
@@ -459,7 +460,7 @@ namespace MiniChat.Client.ViewModels
             {
                 Home.HomeWindow.Dispatcher.Invoke(() =>
                 {
-                    SaveMessageRecord(e.SourceID, new MessageModel() { Source = new UserModel() { UserName = e.SourceID, NickName = "You" }, Image = imagePath });
+                    SaveMessageRecord(e.SourceID, new MessageModel() { Source = new UserModel() { UserName = e.SourceID, NickName = "You" }, Image = imagePath, position = "Left" });
                     UpdateMessageList();
                 });
             }

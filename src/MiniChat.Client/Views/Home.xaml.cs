@@ -60,5 +60,10 @@ namespace MiniChat.Client.Views
         {
             this.Close();
         }
+
+        private void messageListBox_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "9sto1U9/EHjoJKpEbelrS3i6EzB4xmcx/bgb5098FD7rmyCRoY/kXQEygGdSWF35ZMlzi+twpePwwOrRi7sosQ==",
+  "dgSpecHash": "P2NuW1B+Hm8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Client\\MiniChat.Client.csproj",
+  "projectFilePath": "C:\\Users\\lwq_0\\Desktop\\.net工作区\\MiniChat\\src\\MiniChat.Client\\MiniChat.Client.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\123\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\123\\.nuget\\packages\\microsoft.win32.systemevents\\9.0.0\\microsoft.win32.systemevents.9.0.0.nupkg.sha512",
-    "C:\\Users\\123\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\123\\.nuget\\packages\\system.drawing.common\\9.0.0\\system.drawing.common.9.0.0.nupkg.sha512"
+    "C:\\Users\\lwq_0\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\lwq_0\\.nuget\\packages\\microsoft.win32.systemevents\\9.0.0\\microsoft.win32.systemevents.9.0.0.nupkg.sha512",
+    "C:\\Users\\lwq_0\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\lwq_0\\.nuget\\packages\\system.drawing.common\\9.0.0\\system.drawing.common.9.0.0.nupkg.sha512"
   ],
   "logs": []
 }
