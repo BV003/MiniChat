@@ -11,6 +11,16 @@
         WindowStartupLocation="CenterScreen" Style="{StaticResource WindowStyle}"
         MouseDown="Window_MouseDown" Loaded="Window_Loaded" Closing="Window_Closing">
     <Window.Resources>
+
+        
+ 
+        <Style x:Key="ChatBubbleTextBlockStyle" TargetType="TextBlock">
+            <Setter Property="Background" Value="#ADD8E6" />
+            <!-- 设置背景颜色，这里示例为浅蓝色，你可以换成想要的颜色 -->
+            <Setter Property="Foreground" Value="White" />
+            <!-- 设置字体颜色，这里示例为白色 -->
+        </Style>
+        
         <Style x:Key="HeadIconButtonStyle" TargetType="{x:Type Button}">
             <Setter Property="Cursor" Value="Hand" />
             <Setter Property="BorderBrush" Value="Transparent" />
@@ -84,9 +94,29 @@
                      ScrollViewer.HorizontalScrollBarVisibility="Disabled"
                      SelectedItem="{Binding SelectedFriend}" ItemsSource="{Binding FriendList}">
                 <ListBox.ItemTemplate>
+                    
                     <DataTemplate DataType="{x:Type ListBox}">
-                        <TextBlock Foreground="{DynamicResource MainColor}" Text="{Binding NickName}" VerticalAlignment="Center" FontSize="27" />
+                        <Grid HorizontalAlignment="Stretch">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <!-- 用于头像图片 -->
+                                <ColumnDefinition Width="*" />
+                                <!-- 用于现有内容 -->
+                            </Grid.ColumnDefinitions>
+                            <Image Source="/Resources/Images/boy.png" Width="50" Height="25" />
+                            <!-- 显示头像图片 -->
+                            <Grid Grid.Column="1">
+                                <!-- 将现有内容放在一个新的Grid中 -->
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <TextBlock Margin="0,10,0,10" Foreground="{DynamicResource MainColor}" Text="{Binding NickName}" VerticalAlignment="Center" FontSize="27" />
+                            </Grid>
+                        </Grid>
                     </DataTemplate>
+                    
                 </ListBox.ItemTemplate>
                 <ListBox.ContextMenu>
                     <ContextMenu>
@@ -101,25 +131,51 @@
             </ListBox>
 
             <ListBox x:Name="messageListBox" Grid.Column="1" Grid.Row="0" Background="Transparent"
-                     BorderBrush="Gray"
-                     BorderThickness="0,1,0,1" ScrollViewer.HorizontalScrollBarVisibility="Disabled"
-                     ItemsSource="{Binding MessageList}" SelectionChanged="messageListBox_SelectionChanged" FontSize="20">
+BorderBrush="Gray" BorderThickness="0,1,0,1" ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+ItemsSource="{Binding MessageList}" SelectionChanged="messageListBox_SelectionChanged" FontSize="20">
+                <ListBox.Resources>
+                    <!-- 滚动条样式 -->
+                    <Style TargetType="ScrollBar">
+                        <Setter Property="Width" Value="5"/>
+                        <!-- 设置滚动条的宽度 -->
+                        <Setter Property="Height" Value="400"/>
+                        <!-- 设置垂直滚动条的高度 -->
+                        <Setter Property="Background" Value="Transparent"/>
+                        <!-- 设置滚动条的背景颜色 -->
+                        <Setter Property="Foreground" Value="LightBlue"/>
+                        <!-- 设置滚动条的滑块颜色 -->
+                    </Style>
+                    <Style TargetType="Thumb">
+                        <Setter Property="Background" Value="LightBlue"/>
+                        <!-- 设置滑块颜色 -->
+                        <Setter Property="BorderBrush" Value="Transparent"/>
+                        <!-- 设置滑块的边框颜色 -->
+                        <Setter Property="BorderThickness" Value="2"/>
+                        <!-- 设置滑块边框厚度 -->
+                    </Style>
+                    <!-- ScrollViewer样式 -->
+                    <Style TargetType="ScrollViewer">
+                        <Setter Property="HorizontalScrollBarVisibility" Value="Auto"/>
+                        <Setter Property="VerticalScrollBarVisibility" Value="Auto"/>
+                    </Style>
+                </ListBox.Resources>
                 <ListBox.ItemContainerStyle>
                     <Style TargetType="ListBoxItem">
                         <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
                     </Style>
                 </ListBox.ItemContainerStyle>
-                <ListBox.ItemTemplate >
-                    <DataTemplate DataType="{x:Type ListBox}" >
+
+                <ListBox.ItemTemplate>
+                    <DataTemplate DataType="{x:Type ListBox}">
                         <Grid HorizontalAlignment="Stretch">
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto" />
                                 <RowDefinition Height="Auto" />
                                 <RowDefinition Height="Auto" />
                             </Grid.RowDefinitions>
-                            <TextBlock Grid.Row="0" HorizontalAlignment="{Binding position}" Style="{StaticResource TextBlockStyle}" Text="{Binding Source.NickName}" />
-                            <TextBlock Grid.Row="1" Text="{Binding Text}" HorizontalAlignment="{Binding position}" TextWrapping="Wrap" FontSize="20" />
-                            <Image Grid.Row="2" Stretch="None" Source="{Binding Image}" />
+                            <TextBlock Margin="0,15,0,0" Grid.Row="0" HorizontalAlignment="{Binding position}" Style="{StaticResource TextBlockStyle}" Text="{Binding Source.NickName}" />
+                            <TextBlock Style="{StaticResource ChatBubbleTextBlockStyle}" Grid.Row="1" Text="{Binding Text}" HorizontalAlignment="{Binding position}" TextWrapping="Wrap" FontSize="30" />
+                            <Image Grid.Row="1" Stretch="None" Source="{Binding Image}" HorizontalAlignment="{Binding position}"/>
                         </Grid>
                     </DataTemplate>
                 </ListBox.ItemTemplate>

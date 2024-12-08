@@ -372,7 +372,7 @@ namespace MiniChat.Client.ViewModels
                     {
                         if (await Config.MiniClient.SendImageAsync(friend.UserName, imagePath))
                         {
-                            SaveMessageRecord(friend.UserName, new MessageModel() { Source = new UserModel() { UserName = user.UserName, NickName = "Me" }, Image = imagePath, position = "Left" });
+                            SaveMessageRecord(friend.UserName, new MessageModel() { Source = new UserModel() { UserName = user.UserName, NickName = "Me" }, Image = imagePath, position = "Right" });
                             UpdateMessageList();
                             return;
                         }

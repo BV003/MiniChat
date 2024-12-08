@@ -21,3 +21,4 @@
 [2024/12/3 17:03:38]System.Net.Sockets.SocketException：一个封锁操作被对 WSACancelBlockingCall 的调用中断。<服务器意外的被关闭>
 [2024/12/7 17:17:52]System.Net.Sockets.SocketException：远程主机强迫关闭了一个现有的连接。<客户端 yk(10.138.12.142:49897) 意外的断开连接>
 [2024/12/7 22:11:26]System.Net.Sockets.SocketException：你的主机中的软件中止了一个已建立的连接。<客户端 yk(10.138.12.142:58125) 意外的断开连接>
+[2024/12/8 10:05:04]System.Net.Sockets.SocketException：远程主机强迫关闭了一个现有的连接。<客户端 yk(10.138.12.142:63892) 意外的断开连接>

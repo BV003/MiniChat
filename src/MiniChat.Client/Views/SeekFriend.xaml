@@ -20,20 +20,24 @@
             <Button Style="{StaticResource TitleButtonStyle}" Content="-" Click="WindowMinimized" />
             <Button Style="{StaticResource TitleButtonStyle}" Content="×" Click="WindowClose" />
         </StackPanel>
+        <Grid Grid.Row="1">
+            <GroupBox Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" Header="查找好友"
+          Foreground="{DynamicResource MainColor}" Margin="5">
+                <Grid Grid.Row="1" Margin="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="10" />
+                        <ColumnDefinition Width="8*" />
+                        <ColumnDefinition Width="10" />
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="10" />
+                    </Grid.ColumnDefinitions>
 
-        <Grid Grid.Row="1" Margin="10">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="10" />
-                <ColumnDefinition Width="8*" />
-                <ColumnDefinition Width="10" />
-                <ColumnDefinition Width="2*" />
-                <ColumnDefinition Width="10" />
-            </Grid.ColumnDefinitions>
-
-            <TextBox Grid.Column="1" Style="{StaticResource InputBoxStyle}" VerticalAlignment="Center"
+                    <TextBox Grid.Column="1" Style="{StaticResource InputBoxStyle}" VerticalAlignment="Center"
                      Text="{Binding FriendName}" />
-            <Button Grid.Column="3" Style="{StaticResource ButtonStyle}" Content="查找" Height="25"
+                    <Button Grid.Column="3" Style="{StaticResource ButtonStyle}" Content="查找" Height="25"
                     Command="{Binding AddFriendCommand}" />
+                </Grid>
+            </GroupBox>
         </Grid>
     </Grid>
 </Window>
