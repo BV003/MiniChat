@@ -56,10 +56,7 @@
       },
       "MiniChat.Common/1.0.0": {
         "runtime": {
-          "MiniChat.Common.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "MiniChat.Common.dll": {}
         }
       },
       "MiniChat.Socket/1.0.0": {
@@ -67,10 +64,7 @@
           "MiniChat.Transmitting": "1.0.0"
         },
         "runtime": {
-          "MiniChat.Socket.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "MiniChat.Socket.dll": {}
         }
       },
       "MiniChat.Transmitting/1.0.0": {
@@ -79,10 +73,7 @@
           "NETStandard.Library": "2.0.3"
         },
         "runtime": {
-          "MiniChat.Transmitting.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "MiniChat.Transmitting.dll": {}
         }
       }
     }

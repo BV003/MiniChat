@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MiniChat.Transmitting
-build_property.ProjectDir = C:\Users\lwq_0\Desktop\.net工作区\MiniChat\src\MiniChat.Transmitting\
+build_property.ProjectDir = C:\Users\123\Documents\GitHub\MiniChat\src\MiniChat.Transmitting\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

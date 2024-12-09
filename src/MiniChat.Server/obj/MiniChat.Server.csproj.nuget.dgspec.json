@@ -1,28 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lwq_0\\Desktop\\.net工作区\\MiniChat\\src\\MiniChat.Server\\MiniChat.Server.csproj": {}
+    "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Server\\MiniChat.Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lwq_0\\Desktop\\.net工作区\\MiniChat\\src\\MiniChat.Common\\MiniChat.Common.csproj": {
+    "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Common\\MiniChat.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lwq_0\\Desktop\\.net工作区\\MiniChat\\src\\MiniChat.Common\\MiniChat.Common.csproj",
+        "projectUniqueName": "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Common\\MiniChat.Common.csproj",
         "projectName": "MiniChat.Common",
-        "projectPath": "C:\\Users\\lwq_0\\Desktop\\.net工作区\\MiniChat\\src\\MiniChat.Common\\MiniChat.Common.csproj",
-        "packagesPath": "C:\\Users\\lwq_0\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lwq_0\\Desktop\\.net工作区\\MiniChat\\src\\MiniChat.Common\\obj\\",
+        "projectPath": "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Common\\MiniChat.Common.csproj",
+        "packagesPath": "C:\\Users\\123\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lwq_0\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\123\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -61,40 +58,37 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\lwq_0\\Desktop\\.net工作区\\MiniChat\\src\\MiniChat.Server\\MiniChat.Server.csproj": {
+    "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Server\\MiniChat.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lwq_0\\Desktop\\.net工作区\\MiniChat\\src\\MiniChat.Server\\MiniChat.Server.csproj",
+        "projectUniqueName": "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Server\\MiniChat.Server.csproj",
         "projectName": "MiniChat.Server",
-        "projectPath": "C:\\Users\\lwq_0\\Desktop\\.net工作区\\MiniChat\\src\\MiniChat.Server\\MiniChat.Server.csproj",
-        "packagesPath": "C:\\Users\\lwq_0\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lwq_0\\Desktop\\.net工作区\\MiniChat\\src\\MiniChat.Server\\obj\\",
+        "projectPath": "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Server\\MiniChat.Server.csproj",
+        "packagesPath": "C:\\Users\\123\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Server\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lwq_0\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\123\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\lwq_0\\Desktop\\.net工作区\\MiniChat\\src\\MiniChat.Socket\\MiniChat.Socket.csproj": {
-                "projectPath": "C:\\Users\\lwq_0\\Desktop\\.net工作区\\MiniChat\\src\\MiniChat.Socket\\MiniChat.Socket.csproj"
+              "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Socket\\MiniChat.Socket.csproj": {
+                "projectPath": "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Socket\\MiniChat.Socket.csproj"
               },
-              "C:\\Users\\lwq_0\\Desktop\\.net工作区\\MiniChat\\src\\MiniChat.Transmitting\\MiniChat.Transmitting.csproj": {
-                "projectPath": "C:\\Users\\lwq_0\\Desktop\\.net工作区\\MiniChat\\src\\MiniChat.Transmitting\\MiniChat.Transmitting.csproj"
+              "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Transmitting\\MiniChat.Transmitting.csproj": {
+                "projectPath": "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Transmitting\\MiniChat.Transmitting.csproj"
               }
             }
           }
@@ -139,37 +133,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\lwq_0\\Desktop\\.net工作区\\MiniChat\\src\\MiniChat.Socket\\MiniChat.Socket.csproj": {
+    "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Socket\\MiniChat.Socket.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lwq_0\\Desktop\\.net工作区\\MiniChat\\src\\MiniChat.Socket\\MiniChat.Socket.csproj",
+        "projectUniqueName": "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Socket\\MiniChat.Socket.csproj",
         "projectName": "MiniChat.Socket",
-        "projectPath": "C:\\Users\\lwq_0\\Desktop\\.net工作区\\MiniChat\\src\\MiniChat.Socket\\MiniChat.Socket.csproj",
-        "packagesPath": "C:\\Users\\lwq_0\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lwq_0\\Desktop\\.net工作区\\MiniChat\\src\\MiniChat.Socket\\obj\\",
+        "projectPath": "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Socket\\MiniChat.Socket.csproj",
+        "packagesPath": "C:\\Users\\123\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Socket\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lwq_0\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\123\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\lwq_0\\Desktop\\.net工作区\\MiniChat\\src\\MiniChat.Transmitting\\MiniChat.Transmitting.csproj": {
-                "projectPath": "C:\\Users\\lwq_0\\Desktop\\.net工作区\\MiniChat\\src\\MiniChat.Transmitting\\MiniChat.Transmitting.csproj"
+              "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Transmitting\\MiniChat.Transmitting.csproj": {
+                "projectPath": "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Transmitting\\MiniChat.Transmitting.csproj"
               }
             }
           }
@@ -204,37 +195,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\lwq_0\\Desktop\\.net工作区\\MiniChat\\src\\MiniChat.Transmitting\\MiniChat.Transmitting.csproj": {
+    "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Transmitting\\MiniChat.Transmitting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lwq_0\\Desktop\\.net工作区\\MiniChat\\src\\MiniChat.Transmitting\\MiniChat.Transmitting.csproj",
+        "projectUniqueName": "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Transmitting\\MiniChat.Transmitting.csproj",
         "projectName": "MiniChat.Transmitting",
-        "projectPath": "C:\\Users\\lwq_0\\Desktop\\.net工作区\\MiniChat\\src\\MiniChat.Transmitting\\MiniChat.Transmitting.csproj",
-        "packagesPath": "C:\\Users\\lwq_0\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lwq_0\\Desktop\\.net工作区\\MiniChat\\src\\MiniChat.Transmitting\\obj\\",
+        "projectPath": "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Transmitting\\MiniChat.Transmitting.csproj",
+        "packagesPath": "C:\\Users\\123\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Transmitting\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\lwq_0\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\123\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\lwq_0\\Desktop\\.net工作区\\MiniChat\\src\\MiniChat.Common\\MiniChat.Common.csproj": {
-                "projectPath": "C:\\Users\\lwq_0\\Desktop\\.net工作区\\MiniChat\\src\\MiniChat.Common\\MiniChat.Common.csproj"
+              "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Common\\MiniChat.Common.csproj": {
+                "projectPath": "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Common\\MiniChat.Common.csproj"
               }
             }
           }
@@ -275,7 +263,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

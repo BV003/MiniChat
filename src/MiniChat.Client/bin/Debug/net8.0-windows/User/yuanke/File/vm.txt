@@ -1,0 +1,7 @@
+mm::frame_allocator::FRAME_ALLOCATOR (shared memory)
+mm::heap_allocator::HEAP_ALLOCATOR(shared memory) already has lock
+mm::memory_set::KERNEL_SPACE(shared memory)
+task::manager::TASK_MANAGER(all cpu share one task manager)
+task::pid::PID_ALLOCATOR(all cpu share one pid allocator)
+task::processor::PROCESSOR(all cpu has own processor) TBD
+sbi_rt::hart_start

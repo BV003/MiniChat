@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <MiniServer>
   <Server>
-    <IP>10.128.135.118</IP>
+    <IP>10.128.133.230</IP>
     <Port>8080</Port>
   </Server>
   <Database>
-    <ConnectionString>Server=DESKTOP_OF_LIU;Database=MiniCommunication;Integrated Security=True;</ConnectionString>
+    <ConnectionString>Server=PIERRECASHON;Database=MiniCommunication;Integrated Security=True;</ConnectionString>
   </Database>
 </MiniServer>
