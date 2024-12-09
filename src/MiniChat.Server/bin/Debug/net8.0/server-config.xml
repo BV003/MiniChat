@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <MiniServer>
   <Server>
-    <IP>10.138.12.142</IP>
+    <IP>10.128.135.118</IP>
     <Port>8080</Port>
   </Server>
   <Database>

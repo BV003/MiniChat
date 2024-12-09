@@ -19,6 +19,8 @@
             <!-- 设置背景颜色，这里示例为浅蓝色，你可以换成想要的颜色 -->
             <Setter Property="Foreground" Value="White" />
             <!-- 设置字体颜色，这里示例为白色 -->
+            <Setter Property="Padding" Value="10,5,10,5" />
+            
         </Style>
         
         <Style x:Key="HeadIconButtonStyle" TargetType="{x:Type Button}">
@@ -103,7 +105,7 @@
                                 <ColumnDefinition Width="*" />
                                 <!-- 用于现有内容 -->
                             </Grid.ColumnDefinitions>
-                            <Image Source="/Resources/Images/boy.png" Width="50" Height="25" />
+                            <Image Source="/Resources/Images/boy.png" Width="70" Height="50" />
                             <!-- 显示头像图片 -->
                             <Grid Grid.Column="1">
                                 <!-- 将现有内容放在一个新的Grid中 -->
