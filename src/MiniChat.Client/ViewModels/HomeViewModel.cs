@@ -13,6 +13,7 @@ using MiniSocket.Client;
 using MiniChat.Transmitting;
 using System.Threading.Tasks;
 using System.Text.Json;
+using System.Windows.Controls;
 
 namespace MiniChat.Client.ViewModels
 {
@@ -372,7 +373,7 @@ namespace MiniChat.Client.ViewModels
                     {
                         if (await Config.MiniClient.SendImageAsync(friend.UserName, imagePath))
                         {
-                            SaveMessageRecord(friend.UserName, new MessageModel() { Source = new UserModel() { UserName = user.UserName, NickName = "Me" }, Image = imagePath, position = "Right" });
+                            SaveMessageRecord(friend.UserName, new MessageModel() { Source = new UserModel() { UserName = user.UserName, NickName = "Me" }, Image = imagePath,File = imagePath,position = "Right" });
                             UpdateMessageList();
                             return;
                         }
@@ -405,7 +406,8 @@ namespace MiniChat.Client.ViewModels
                     if (await Config.MiniClient.SendFileAsync(friend.UserName, openFile.FileName))
                     {
                         sendFileCanExecute = true;
-                        MessageBox.Show("文件上传成功！", Config.Name, MessageBoxButton.OK, MessageBoxImage.Asterisk);
+                        SaveMessageRecord(friend.UserName, new MessageModel() { Source = new UserModel() { UserName = user.UserName, NickName = "Me" }, Image = "/Resources/Images/folder.png", File = openFile.FileName, position = "Right" });
+                        UpdateMessageList();
                         return;
                     }
                     sendFileCanExecute = true;
@@ -460,7 +462,7 @@ namespace MiniChat.Client.ViewModels
             {
                 Home.HomeWindow.Dispatcher.Invoke(() =>
                 {
-                    SaveMessageRecord(e.SourceID, new MessageModel() { Source = new UserModel() { UserName = e.SourceID, NickName = "You" }, Image = imagePath, position = "Left" });
+                    SaveMessageRecord(e.SourceID, new MessageModel() { Source = new UserModel() { UserName = e.SourceID, NickName = "You" }, Image = imagePath, File = imagePath, position = "Left" });
                     UpdateMessageList();
                 });
             }
@@ -472,8 +474,11 @@ namespace MiniChat.Client.ViewModels
             _downloadFile.Begin(e.FileName, e.FileSize, filePath);
             if (_downloadFile.Go(e.FileName, e.FileData, e.EffectiveBytes))
             {
-                SaveMessageRecord(e.SourceID, new MessageModel() { Source = new UserModel() { UserName = e.SourceID, NickName = "You" }, Text = "对方向你发送了一个文件，请在"+filePath+"查看", position = "Left" });
-                UpdateMessageList();
+                Home.HomeWindow.Dispatcher.Invoke(() =>
+                {
+                    SaveMessageRecord(e.SourceID, new MessageModel() { Source = new UserModel() { UserName = e.SourceID, NickName = "You" }, Image = "/Resources/Images/folder.png", File = filePath, position = "Left" });
+                    UpdateMessageList();
+                });
             }
         }
 
@@ -488,5 +493,6 @@ namespace MiniChat.Client.ViewModels
                 }
             }
         }
+        
     }
 }

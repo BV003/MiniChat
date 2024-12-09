@@ -3,6 +3,8 @@ using System.Windows.Input;
 using System.ComponentModel;
 using MiniChat.Client.Services;
 using MiniChat.Client.ViewModels;
+using System.Windows.Controls;
+using System.IO;
 
 namespace MiniChat.Client.Views
 {
@@ -64,6 +66,21 @@ namespace MiniChat.Client.Views
         private void messageListBox_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
 
+        }
+
+        public void OnImageClick(object sender, RoutedEventArgs e)
+        {
+            if (e.OriginalSource is Button button && button.CommandParameter is string File)
+            {
+                OnImageClick(File);
+            }
+        }
+        private void OnImageClick(string FilePath)
+        {
+            if (!string.IsNullOrEmpty(FilePath) && File.Exists(FilePath))
+            {
+                System.Diagnostics.Process.Start("explorer.exe", "/select," + FilePath);
+            }
         }
     }
 }

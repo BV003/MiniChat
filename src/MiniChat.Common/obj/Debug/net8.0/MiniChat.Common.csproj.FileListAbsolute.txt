@@ -22,3 +22,15 @@ C:\Users\lwq_0\Desktop\.net工作区\MiniChat\src\MiniChat.Common\obj\Debug\net8
 C:\Users\lwq_0\Desktop\.net工作区\MiniChat\src\MiniChat.Common\obj\Debug\net8.0\refint\MiniChat.Common.dll
 C:\Users\lwq_0\Desktop\.net工作区\MiniChat\src\MiniChat.Common\obj\Debug\net8.0\MiniChat.Common.pdb
 C:\Users\lwq_0\Desktop\.net工作区\MiniChat\src\MiniChat.Common\obj\Debug\net8.0\ref\MiniChat.Common.dll
+C:\Users\yuanke\Desktop\MiniChat\src\MiniChat.Common\bin\Debug\net8.0\MiniChat.Common.deps.json
+C:\Users\yuanke\Desktop\MiniChat\src\MiniChat.Common\bin\Debug\net8.0\MiniChat.Common.dll
+C:\Users\yuanke\Desktop\MiniChat\src\MiniChat.Common\bin\Debug\net8.0\MiniChat.Common.pdb
+C:\Users\yuanke\Desktop\MiniChat\src\MiniChat.Common\obj\Debug\net8.0\MiniChat.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yuanke\Desktop\MiniChat\src\MiniChat.Common\obj\Debug\net8.0\MiniChat.Common.AssemblyInfoInputs.cache
+C:\Users\yuanke\Desktop\MiniChat\src\MiniChat.Common\obj\Debug\net8.0\MiniChat.Common.AssemblyInfo.cs
+C:\Users\yuanke\Desktop\MiniChat\src\MiniChat.Common\obj\Debug\net8.0\MiniChat.Common.csproj.CoreCompileInputs.cache
+C:\Users\yuanke\Desktop\MiniChat\src\MiniChat.Common\obj\Debug\net8.0\MiniChat.Common.sourcelink.json
+C:\Users\yuanke\Desktop\MiniChat\src\MiniChat.Common\obj\Debug\net8.0\MiniChat.Common.dll
+C:\Users\yuanke\Desktop\MiniChat\src\MiniChat.Common\obj\Debug\net8.0\refint\MiniChat.Common.dll
+C:\Users\yuanke\Desktop\MiniChat\src\MiniChat.Common\obj\Debug\net8.0\MiniChat.Common.pdb
+C:\Users\yuanke\Desktop\MiniChat\src\MiniChat.Common\obj\Debug\net8.0\ref\MiniChat.Common.dll

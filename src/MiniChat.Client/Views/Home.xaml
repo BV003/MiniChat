@@ -177,7 +177,9 @@ ItemsSource="{Binding MessageList}" SelectionChanged="messageListBox_SelectionCh
                             </Grid.RowDefinitions>
                             <TextBlock Margin="0,15,0,0" Grid.Row="0" HorizontalAlignment="{Binding position}" Style="{StaticResource TextBlockStyle}" Text="{Binding Source.NickName}" />
                             <TextBlock Style="{StaticResource ChatBubbleTextBlockStyle}" Grid.Row="1" Text="{Binding Text}" HorizontalAlignment="{Binding position}" TextWrapping="Wrap" FontSize="30" />
-                            <Image Grid.Row="1" Stretch="None" Source="{Binding Image}" HorizontalAlignment="{Binding position}"/>
+                            <Button Grid.Row="1" HorizontalAlignment="{Binding position}" Click="OnImageClick" CommandParameter="{Binding File}">
+                                <Image Source="{Binding Image}" Stretch="None"/>
+                            </Button>
                         </Grid>
                     </DataTemplate>
                 </ListBox.ItemTemplate>

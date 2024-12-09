@@ -214,32 +214,35 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\123\\.nuget\\packages\\": {}
+    "C:\\Users\\yuanke\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Socket\\MiniChat.Socket.csproj",
+      "projectUniqueName": "C:\\Users\\yuanke\\Desktop\\MiniChat\\src\\MiniChat.Socket\\MiniChat.Socket.csproj",
       "projectName": "MiniChat.Socket",
-      "projectPath": "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Socket\\MiniChat.Socket.csproj",
-      "packagesPath": "C:\\Users\\123\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Socket\\obj\\",
+      "projectPath": "C:\\Users\\yuanke\\Desktop\\MiniChat\\src\\MiniChat.Socket\\MiniChat.Socket.csproj",
+      "packagesPath": "C:\\Users\\yuanke\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\yuanke\\Desktop\\MiniChat\\src\\MiniChat.Socket\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\123\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\yuanke\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Transmitting\\MiniChat.Transmitting.csproj": {
-              "projectPath": "C:\\Users\\123\\Documents\\GitHub\\MiniChat\\src\\MiniChat.Transmitting\\MiniChat.Transmitting.csproj"
+            "C:\\Users\\yuanke\\Desktop\\MiniChat\\src\\MiniChat.Transmitting\\MiniChat.Transmitting.csproj": {
+              "projectPath": "C:\\Users\\yuanke\\Desktop\\MiniChat\\src\\MiniChat.Transmitting\\MiniChat.Transmitting.csproj"
             }
           }
         }
@@ -274,7 +277,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
